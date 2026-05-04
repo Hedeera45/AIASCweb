@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIASC - Asociación de Ingenieros Agrónomos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-teal: #40a090;
+            --color-green: #6b8e23;
+            --color-dark-green: #1a4d3a;
+            --color-light-blue: #b2ebf2;
+            --color-very-light-blue: #e1f5fe;
+            --color-white: #ffffff;
+            --color-text: #1a1a1a;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-heading: 'Outfit', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-white);
+            color: var(--color-text);
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* --- Header Table-like Structure --- */
+        .header-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px 40px;
+            margin-bottom: 40px;
+            background-color: #2e7d32; /* Green background for the whole header area */
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .logo-area {
+            grid-row: 1 / span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #fff; /* White dashed border to stand out against green */
+            height: 220px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--color-dark-green);
+            background: #fff; /* Keeping the box white as in the reference */
+        }
+
+        .cover-area {
+            grid-column: 2;
+            grid-row: 1;
+            height: 160px;
+            border: 2px solid #fff; /* White border for the cover image placeholder */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 2rem;
+            font-family: var(--font-heading);
+            background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+        }
+
+        nav {
+            grid-column: 2;
+            grid-row: 2;
+            background-color: rgba(0, 0, 0, 0.1); /* Slightly darker green bar */
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .nav-links li {
+            flex: 1;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .nav-links li:last-child {
+            border-right: none;
+            flex: 1.5;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: 11px;
+            padding: 0 5px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+
+        /* --- Content Layout --- */
+        .content-layout {
+            display: grid;
+            grid-template-columns: 1fr 450px;
+            gap: 60px;
+            padding: 0 20px;
+        }
+
+        .main-col h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            text-decoration: underline;
+            margin-bottom: 40px;
+            color: var(--color-text);
+        }
+
+        .text-line {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .palette-row {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .swatch {
+            width: 60px;
+            height: 50px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* --- Sidebar Boxes --- */
+        .sidebar-col {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 320px;
+            border: 4px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+
+        .other-text-container {
+            width: 100%;
+            height: 280px;
+            border: 4px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 1000px) {
+            .content-layout { grid-template-columns: 1fr; }
+            .header-grid { grid-template-columns: 1fr; }
+            .logo-area { grid-row: auto; height: 100px; }
+            .cover-area { grid-column: 1; }
+            nav { grid-column: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-grid">
+            <div class="logo-area">AIASC LOGO</div>
+            <div class="cover-area">Imagen de portada</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">Buscar</a></li>
+                    <li><a href="#">Actual</a></li>
+                    <li><a href="#">Archivos</a></li>
+                    <li><a href="#">Normas de publicación</a></li>
+                    <li><a href="#">>> Enviar su Trabajo</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-layout">
+            <div class="main-col">
+                <h1>Título</h1>
+                <div class="text-line">Texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto textoTexto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+                <div class="text-line">Texto texto texto texto texto</div>
+
+                <div class="palette-row">
+                    <div class="swatch" style="background: var(--color-teal);"></div>
+                    <div class="swatch" style="background: var(--color-green);"></div>
+                    <div class="swatch" style="background: var(--color-dark-green);"></div>
+                    <div class="swatch" style="background: var(--color-light-blue);"></div>
+                    <div class="swatch" style="background: var(--color-very-light-blue);"></div>
+                </div>
+            </div>
+
+            <div class="sidebar-col">
+                <div class="image-container">Imágenes</div>
+                <div class="other-text-container">otro texto</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
