@@ -7,7 +7,9 @@
   --color-very-light-blue: #e1f5fe;
   --color-white: #ffffff;
   --color-text: #1a1a1a;
-  
+  --color-hr: #2e7d32;
+  --color-cursos-bg: #e8f5e9;
+
   --font-main: 'Plus Jakarta Sans', sans-serif;
   --font-heading: 'Outfit', sans-serif;
 }
@@ -25,25 +27,47 @@ body {
   font-family: var(--font-main);
   background: var(--color-white);
   color: var(--color-text);
-  line-height: 1.4;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-dark-green);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* --- Header Grid --- */
+/* ========================================
+   WHITE BAND ABOVE HEADER
+   ======================================== */
+.top-white-band {
+  height: 18px;
+  background: var(--color-white);
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+
+/* ========================================
+   HEADER GRID
+   ======================================== */
 .header-grid {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: auto auto;
-  gap: 20px 40px;
-  margin-bottom: 40px;
+  gap: 16px 32px;
+  margin-bottom: 0;
   background-color: var(--color-header-bg);
-  padding: 20px;
-  border-radius: 4px;
+  padding: 18px;
+  border-radius: 0;
 }
 
 .logo-area {
@@ -52,36 +76,42 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px dashed #fff;
-  height: 220px;
+  height: 180px;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color-dark-green);
   background: #fff;
+  border-radius: 3px;
 }
 
 .cover-area {
   grid-column: 2;
   grid-row: 1;
-  height: 160px;
-  border: 2px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 2rem;
-  font-family: var(--font-heading);
-  background: rgba(255, 255, 255, 0.1);
+  height: 130px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  border-radius: 3px;
 }
 
+.cover-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
 .nav-bar {
   grid-column: 2;
   grid-row: 2;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 50px;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 44px;
   display: flex;
   align-items: center;
+  border-radius: 3px;
 }
 
 .nav-links {
@@ -89,116 +119,364 @@ body {
   list-style: none;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
 .nav-links li {
   flex: 1;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links li:last-child {
   border-right: none;
-  flex: 1.5;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 11px;
-  padding: 0 5px;
-  height: 50px;
+  font-size: 12px;
+  padding: 0 8px;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  transition: background 0.3s;
+  transition: background 0.25s;
+  letter-spacing: 0.02em;
 }
 
 .nav-links a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
 }
 
-/* --- Content Layout --- */
-.content-layout {
-  display: grid;
-  grid-template-columns: 1fr 450px;
-  gap: 60px;
-  padding: 0 20px;
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 700;
 }
 
-.main-col h1 {
+/* ========================================
+   PAGE CONTENT AREA
+   ======================================== */
+.page-content {
+  padding: 36px 20px 60px;
+}
+
+/* ========================================
+   GREEN HR RULER
+   ======================================== */
+hr.green-rule {
+  border: none;
+  height: 3px;
+  background: var(--color-hr);
+  margin: 8px 0 18px;
+  border-radius: 2px;
+}
+
+/* ========================================
+   PAGE TITLE
+   ======================================== */
+.page-title {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
-  text-decoration: underline;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--color-text);
+  margin-bottom: 6px;
 }
 
-.text-line {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+/* ========================================
+   TEXT BLOCKS (generic paragraphs)
+   ======================================== */
+.text-block {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-.palette-row {
-  margin-top: 40px;
+/* ========================================
+   SECTION BLOCKS (Novedades, Eventos)
+   ======================================== */
+.section-block {
+  margin-bottom: 48px;
+}
+
+.section-block h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-green);
+  margin-bottom: 4px;
+}
+
+.section-row {
+  padding: 10px 0;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-row:last-of-type {
+  border-bottom: none;
+}
+
+.section-more {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--color-dark-green);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.section-more:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   CURSOS CORRIENTES SUBHEADER
+   ======================================== */
+.cursos-header {
+  background: var(--color-cursos-bg);
+  padding: 10px 14px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-dark-green);
+  border-left: 4px solid var(--color-header-bg);
+  border-radius: 2px;
+}
+
+/* ========================================
+   PUBLICACIONES TABLE
+   ======================================== */
+.pub-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.pub-row {
+  background: #f8f9fa;
+  transition: box-shadow 0.2s;
+}
+
+.pub-row:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.pub-row td {
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+}
+
+.pub-row td:first-child {
+  font-weight: 500;
+  border-right: none;
+}
+
+.pub-row td:last-child {
+  text-align: right;
+  color: #666;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  width: 140px;
+  border-left: none;
+}
+
+.pub-link {
+  color: var(--color-dark-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   PUBLICACION DETAIL PAGE
+   ======================================== */
+.pub-detail-header {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.swatch {
-  width: 60px;
-  height: 50px;
+.pub-download {
+  color: var(--color-header-bg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  padding: 6px 16px;
+  border: 1px solid var(--color-header-bg);
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.2s, color 0.2s;
+  margin-top: 6px;
 }
 
-/* --- Sidebar --- */
-.sidebar-col {
+.pub-download:hover {
+  background: var(--color-header-bg);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pub-detail-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   SOBRE LA AIASC - LINK LIST
+   ======================================== */
+.sobre-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sobre-links li {
+  padding: 14px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sobre-links li:last-child {
+  border-bottom: none;
+}
+
+.sobre-links a {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-dark-green);
+  transition: color 0.2s;
+}
+
+.sobre-links a:hover {
+  color: var(--color-header-bg);
+  text-decoration: underline;
+}
+
+/* ========================================
+   CONTACTO FORM
+   ======================================== */
+.contact-form {
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 18px;
 }
 
-.image-container {
-  width: 100%;
-  height: 320px;
-  border: 4px solid black;
+.form-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 2.2rem;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.other-text-container {
-  width: 100%;
-  height: 280px;
-  border: 4px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.8rem;
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #444;
 }
 
-@media (max-width: 1000px) {
-  .content-layout {
-    grid-template-columns: 1fr;
-  }
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  color: var(--color-text);
+  background: #fafafa;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-header-bg);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+}
+
+.form-group textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.form-submit {
+  align-self: flex-start;
+  background: var(--color-header-bg);
+  color: #fff;
+  border: none;
+  padding: 11px 32px;
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+
+.form-submit:hover {
+  background: var(--color-dark-green);
+}
+
+.form-submit:active {
+  transform: scale(0.97);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 800px) {
   .header-grid {
     grid-template-columns: 1fr;
   }
+
   .logo-area {
     grid-row: auto;
-    height: 100px;
+    height: 90px;
   }
+
   .cover-area {
     grid-column: 1;
+    height: 100px;
+    font-size: 1.2rem;
   }
+
   .nav-bar {
     grid-column: 1;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    flex: 0 0 50%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links a {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+
+  .page-content {
+    padding: 24px 8px 40px;
+  }
+
+  .pub-row td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .pub-detail-header {
+    flex-direction: column;
   }
 }

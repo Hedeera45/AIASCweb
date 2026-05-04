@@ -1,50 +1,38 @@
-export default function Home() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <div className="container">
-      <header className="header-grid">
-        <div className="logo-area">AIASC LOGO</div>
-        <div className="cover-area">Imagen de portada</div>
-        <nav className="nav-bar">
-          <ul className="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Iniciar sesión</a></li>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Buscar</a></li>
-            <li><a href="#">Actual</a></li>
-            <li><a href="#">Archivos</a></li>
-            <li><a href="#">Normas de publicación</a></li>
-            <li><a href="#">&gt;&gt; Enviar su Trabajo</a></li>
-          </ul>
-        </nav>
-      </header>
+    <>
+      {/* ---- NOVEDADES ---- */}
+      <section className="section-block">
+        <h2>Novedades</h2>
+        <hr className="green-rule" />
+        <div className="section-row">Novedad 1</div>
+        <div className="section-row">Novedad 2</div>
+        <div className="section-row">Novedad 3</div>
+        <Link href="/novedades" className="section-more">
+          más novedades...
+        </Link>
+      </section>
 
-      <div className="content-layout">
-        <main className="main-col">
-          <h1>Título</h1>
-          <div className="text-line">Texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto textoTexto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
-          <div className="text-line">Texto texto texto texto texto</div>
+      {/* ---- PRÓXIMOS EVENTOS ---- */}
+      <section className="section-block">
+        <h2>Próximos Eventos</h2>
+        <hr className="green-rule" />
+        <div className="section-row">Evento 1</div>
+        <div className="section-row">Evento 2</div>
+        <div className="section-row">Evento 3</div>
 
-          <div className="palette-row">
-            <div className="swatch" style={{ background: 'var(--color-teal)' }}></div>
-            <div className="swatch" style={{ background: 'var(--color-green)' }}></div>
-            <div className="swatch" style={{ background: 'var(--color-dark-green)' }}></div>
-            <div className="swatch" style={{ background: 'var(--color-light-blue)' }}></div>
-            <div className="swatch" style={{ background: 'var(--color-very-light-blue)' }}></div>
-          </div>
-        </main>
+        {/* Cursos corrientes */}
+        <div className="cursos-header">Cursos corrientes</div>
+        <div className="section-row">Curso 1</div>
+        <div className="section-row">Curso 2</div>
+        <div className="section-row">Curso 3</div>
 
-        <aside className="sidebar-col">
-          <div className="image-container">Imágenes</div>
-          <div className="other-text-container">otro texto</div>
-        </aside>
-      </div>
-    </div>
+        <Link href="/eventos" className="section-more">
+          más eventos...
+        </Link>
+      </section>
+    </>
   );
 }
