@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <title>Status Cafe Forum</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">home</a> <a href="/posts">posts</a> <a href="/feed.atom">atom</a>
+            
+            <a href="/login">login</a> <a href="/register">register</a>
+            
+        </nav>
+    </header>
+    
+    
+    <main>
+    
+
+<h1>Status Cafe Forum</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th class="grow">Forum</th>
+            <th>Topics</th>
+            <th>Posts</th>
+            <th>Updated</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        <tr class="forum">
+            <td colspan="4"><a href="/forums/1">The Entrance</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <a href="/boards/1">How to get in</a><br>Since the door is locked, perhaps there&#39;s a key to be found around here. 
+            </td>
+            <td class="center">1</td>
+            <td class="center">1</td>
+            <td class="center">
+                
+                <a href="/boards/1/newest">2022-02-12</a>
+                
+            </td>
+        </tr>
+        
+        
+        <tr class="forum">
+            <td colspan="4"><a href="/forums/2">The Cafe</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <a href="/boards/2">General</a><br>Discuss about anything with other patrons of the cafe.
+            </td>
+            <td class="center">55</td>
+            <td class="center">873</td>
+            <td class="center">
+                
+                <a href="/boards/2/newest">2026-04-30</a>
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <a href="/boards/3">Your projects</a><br>Tell us about your recent project, as we&#39;re all gathered in here.
+            </td>
+            <td class="center">52</td>
+            <td class="center">190</td>
+            <td class="center">
+                
+                <a href="/boards/3/newest">2026-04-22</a>
+                
+            </td>
+        </tr>
+        
+        
+        <tr class="forum">
+            <td colspan="4"><a href="/forums/3">status.cafe</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <a href="/boards/5">Bug report</a><br>Anything you&#39;d like to report?
+            </td>
+            <td class="center">23</td>
+            <td class="center">86</td>
+            <td class="center">
+                
+                <a href="/boards/5/newest">2026-03-27</a>
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <a href="/boards/4">Questions</a><br>Any question about status.cafe? That&#39;s the place to ask them!
+            </td>
+            <td class="center">85</td>
+            <td class="center">258</td>
+            <td class="center">
+                
+                <a href="/boards/4/newest">2026-04-30</a>
+                
+            </td>
+        </tr>
+        
+        
+        
+    </tbody>
+</table>
+
+    </main>
+    
+    <footer>
+        <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
+    </footer>
+    
+</body>
+</html>

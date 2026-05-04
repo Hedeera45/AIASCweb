@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <title>Status Cafe Forum</title>
+    <link type="application/atom+xml" rel="alternate" href="https://forum.status.cafe//boards/2/feed.atom"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">home</a> <a href="/posts">posts</a> <a href="/feed.atom">atom</a>
+            
+            <a href="/login">login</a> <a href="/register">register</a>
+            
+        </nav>
+    </header>
+    
+    
+    <main>
+    
+
+<nav class="breadcrumb">
+    <a href="/">Forums</a>
+    
+    
+    › <a href="/forums/2">The Cafe</a>
+    
+    › General
+    
+    
+    
+</nav>
+
+<h1>General</h1>
+
+
+
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th class="grow">Subject</th>
+            <th>Author</th>
+            <th>Replies</th>
+            <th>Updated</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        
+        <tr>
+            <td colspan="grow">
+                <span class="sticky">[Sticky]</span>
+                <a href="/topics/2">Introductions</a>
+            </td>
+            <td class="center"><a href="/users/1">m15o</a></td>
+            <td class="center">268</td>
+            <td><a href="/topics/2/newest">2026-04-30</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                <span class="sticky">[Sticky]</span>
+                <a href="/topics/3">Welcome to status.cafe forums!</a>
+            </td>
+            <td class="center"><a href="/users/1">m15o</a></td>
+            <td class="center">13</td>
+            <td><a href="/topics/3/newest">2025-09-28</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/198">Where I can find pretty css / html code for status cafe?</a>
+            </td>
+            <td class="center"><a href="/users/1220">asyncx</a></td>
+            <td class="center">3</td>
+            <td><a href="/topics/198/newest">2026-04-30</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/247">What are your interests?</a>
+            </td>
+            <td class="center"><a href="/users/1589">sirverity</a></td>
+            <td class="center">0</td>
+            <td><a href="/topics/247/newest">2026-04-30</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/184">Your favorite genre of music</a>
+            </td>
+            <td class="center"><a href="/users/1101">tbhs13</a></td>
+            <td class="center">22</td>
+            <td><a href="/topics/184/newest">2026-04-30</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/232">LINUX BOARD CAUSE WHY NOT</a>
+            </td>
+            <td class="center"><a href="/users/1238">finleyishere</a></td>
+            <td class="center">7</td>
+            <td><a href="/topics/232/newest">2026-04-30</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/191">Top-tier FOSS android apps you use</a>
+            </td>
+            <td class="center"><a href="/users/1183">suma</a></td>
+            <td class="center">5</td>
+            <td><a href="/topics/191/newest">2026-04-27</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/99">what anime do u like?</a>
+            </td>
+            <td class="center"><a href="/users/521">shen</a></td>
+            <td class="center">28</td>
+            <td><a href="/topics/99/newest">2026-04-23</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/124">getting bored of the web lately</a>
+            </td>
+            <td class="center"><a href="/users/585">violetuv</a></td>
+            <td class="center">17</td>
+            <td><a href="/topics/124/newest">2026-04-22</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/98">what are you reading? 📚</a>
+            </td>
+            <td class="center"><a href="/users/476">zwerg</a></td>
+            <td class="center">37</td>
+            <td><a href="/topics/98/newest">2026-04-22</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/244">Fun fact about my school!</a>
+            </td>
+            <td class="center"><a href="/users/1565">thursday2012</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/244/newest">2026-04-15</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/77">Do you think Web 1.0 will make a comeback? 👀</a>
+            </td>
+            <td class="center"><a href="/users/349">thecozycat</a></td>
+            <td class="center">22</td>
+            <td><a href="/topics/77/newest">2026-03-12</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/103">Living Room</a>
+            </td>
+            <td class="center"><a href="/users/534">io915</a></td>
+            <td class="center">37</td>
+            <td><a href="/topics/103/newest">2026-03-12</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/202">what are some more sites like this</a>
+            </td>
+            <td class="center"><a href="/users/1239">wofam</a></td>
+            <td class="center">8</td>
+            <td><a href="/topics/202/newest">2026-03-07</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/220">Favorite type of artstyle</a>
+            </td>
+            <td class="center"><a href="/users/1101">tbhs13</a></td>
+            <td class="center">6</td>
+            <td><a href="/topics/220/newest">2026-02-26</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/13">How do you feel right now?</a>
+            </td>
+            <td class="center"><a href="/users/1">m15o</a></td>
+            <td class="center">18</td>
+            <td><a href="/topics/13/newest">2026-02-14</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/180">POETRY! 💌</a>
+            </td>
+            <td class="center"><a href="/users/1088">bigal</a></td>
+            <td class="center">4</td>
+            <td><a href="/topics/180/newest">2026-01-17</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/230">hi everyone!</a>
+            </td>
+            <td class="center"><a href="/users/1381">yuepisodes</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/230/newest">2026-01-11</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/68">ASCII art thread</a>
+            </td>
+            <td class="center"><a href="/users/283">parkeroilar2328</a></td>
+            <td class="center">24</td>
+            <td><a href="/topics/68/newest">2025-12-24</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/228">oh my god guys we can make super cool awesome topics.</a>
+            </td>
+            <td class="center"><a href="/users/1350">renshacherry</a></td>
+            <td class="center">0</td>
+            <td><a href="/topics/228/newest">2025-12-17</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/214">Music Enjoyers!!! Over Hereeee!!!!!</a>
+            </td>
+            <td class="center"><a href="/users/1238">finleyishere</a></td>
+            <td class="center">10</td>
+            <td><a href="/topics/214/newest">2025-12-10</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/153">I&#39;ve created a short &#39;tutorial&#39; to help customize status.cafe pages</a>
+            </td>
+            <td class="center"><a href="/users/820">wisterya</a></td>
+            <td class="center">11</td>
+            <td><a href="/topics/153/newest">2025-12-10</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/221">why 88x31 buttons</a>
+            </td>
+            <td class="center"><a href="/users/1205">poyau</a></td>
+            <td class="center">3</td>
+            <td><a href="/topics/221/newest">2025-11-20</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/197">Unconventional computing theories</a>
+            </td>
+            <td class="center"><a href="/users/51">macadoum</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/197/newest">2025-11-17</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/217">Thinking about a place in the internet for kids</a>
+            </td>
+            <td class="center"><a href="/users/1238">finleyishere</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/217/newest">2025-10-17</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/95">Is anyone in a rut?</a>
+            </td>
+            <td class="center"><a href="/users/446">gregeporter</a></td>
+            <td class="center">5</td>
+            <td><a href="/topics/95/newest">2025-10-16</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/212">Good tutorials/advice for webpage customization?</a>
+            </td>
+            <td class="center"><a href="/users/1184">pixi3</a></td>
+            <td class="center">2</td>
+            <td><a href="/topics/212/newest">2025-10-04</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/176">Guest Book for personal websites</a>
+            </td>
+            <td class="center"><a href="/users/985">grrgyle</a></td>
+            <td class="center">8</td>
+            <td><a href="/topics/176/newest">2025-09-28</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/195">Things that stuck with you</a>
+            </td>
+            <td class="center"><a href="/users/1182">zara_si_aabju</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/195/newest">2025-08-01</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/142">What&#39;s a song you wish more people knew about?</a>
+            </td>
+            <td class="center"><a href="/users/685">goobiegoobab</a></td>
+            <td class="center">17</td>
+            <td><a href="/topics/142/newest">2025-07-31</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/188">got any fun surveys &amp; quizzes?</a>
+            </td>
+            <td class="center"><a href="/users/1153">vwen</a></td>
+            <td class="center">2</td>
+            <td><a href="/topics/188/newest">2025-07-27</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/193">lets talk about xmpp</a>
+            </td>
+            <td class="center"><a href="/users/1183">suma</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/193/newest">2025-07-24</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/192">[meta] use any emojis</a>
+            </td>
+            <td class="center"><a href="/users/1159">stag</a></td>
+            <td class="center">0</td>
+            <td><a href="/topics/192/newest">2025-07-13</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/58">What games have you been into recently?</a>
+            </td>
+            <td class="center"><a href="/users/156">katieampersand</a></td>
+            <td class="center">35</td>
+            <td><a href="/topics/58/newest">2025-07-12</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/22">🎵 What are you listening to?</a>
+            </td>
+            <td class="center"><a href="/users/10">zeeslag</a></td>
+            <td class="center">68</td>
+            <td><a href="/topics/22/newest">2025-07-12</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/167">ask ouija, café edition</a>
+            </td>
+            <td class="center"><a href="/users/914">hexadecimal16</a></td>
+            <td class="center">11</td>
+            <td><a href="/topics/167/newest">2025-07-06</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/121">what&#39;s your favorite manga?</a>
+            </td>
+            <td class="center"><a href="/users/659">orb</a></td>
+            <td class="center">4</td>
+            <td><a href="/topics/121/newest">2025-06-19</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/96">what&#39;s most important/joyful in your life right now?</a>
+            </td>
+            <td class="center"><a href="/users/450">canineical</a></td>
+            <td class="center">18</td>
+            <td><a href="/topics/96/newest">2025-06-19</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/59">good movies to watch with my gf</a>
+            </td>
+            <td class="center"><a href="/users/172">zapazza</a></td>
+            <td class="center">6</td>
+            <td><a href="/topics/59/newest">2025-06-14</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/126">link cool people from anywhere</a>
+            </td>
+            <td class="center"><a href="/users/670">rec01n</a></td>
+            <td class="center">6</td>
+            <td><a href="/topics/126/newest">2025-05-18</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/69">toki pona</a>
+            </td>
+            <td class="center"><a href="/users/289">o2c</a></td>
+            <td class="center">9</td>
+            <td><a href="/topics/69/newest">2025-05-09</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/7">Hello world!</a>
+            </td>
+            <td class="center"><a href="/users/9">ice</a></td>
+            <td class="center">10</td>
+            <td><a href="/topics/7/newest">2025-05-09</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/25">What&#39;s your favourite food?</a>
+            </td>
+            <td class="center"><a href="/users/43">neonriser</a></td>
+            <td class="center">23</td>
+            <td><a href="/topics/25/newest">2025-04-13</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/37">Is the earth flat ?</a>
+            </td>
+            <td class="center"><a href="/users/51">macadoum</a></td>
+            <td class="center">17</td>
+            <td><a href="/topics/37/newest">2025-01-16</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/161">What are you doing this Christmas holyday?</a>
+            </td>
+            <td class="center"><a href="/users/815">blop</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/161/newest">2024-12-23</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/33">Pome about soup</a>
+            </td>
+            <td class="center"><a href="/users/4">melon</a></td>
+            <td class="center">6</td>
+            <td><a href="/topics/33/newest">2024-12-13</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/136">Genuine question</a>
+            </td>
+            <td class="center"><a href="/users/763">asmodeusvulcan</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/136/newest">2024-10-06</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/134">Question about the status widget</a>
+            </td>
+            <td class="center"><a href="/users/725">bodhii</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/134/newest">2024-08-17</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/128">Breaking paywalls</a>
+            </td>
+            <td class="center"><a href="/users/656">solarphant0m</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/128/newest">2024-08-07</a></td>
+        </tr>
+        
+        <tr>
+            <td colspan="grow">
+                
+                <a href="/topics/117">macOS/Linux script to download all statuses</a>
+            </td>
+            <td class="center"><a href="/users/356">kevg</a></td>
+            <td class="center">1</td>
+            <td><a href="/topics/117/newest">2024-08-01</a></td>
+        </tr>
+        
+        
+        </tbody>
+    </table>
+    
+
+<p>
+    
+    
+    <a href="?page=2">Next page</a>
+    
+</p>
+
+
+</section>
+
+    </main>
+    
+    <footer>
+        <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
+    </footer>
+    
+</body>
+</html>

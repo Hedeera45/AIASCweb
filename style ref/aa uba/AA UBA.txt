@@ -1,0 +1,416 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Agronomía & Ambiente</title>
+	<meta name="description" content="Revista de difusión y discusión de avances científicos, técnicos y profesionales de interés agronómico y ambiental. Fauba." />
+	<meta name="keywords" content="agronomía; ambiente; revista; difusión, ciencia, avances," />
+	<meta name="generator" content="Open Journal Systems 2.4.2.0" />
+	
+	<link rel="icon" href="https://agronomiayambiente.agro.uba.ar/public/journals/1/journalFavicon_es_ES.ico" type="image/x-icon" />	<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/lib/pkp/styles/pkp.css" type="text/css" />
+	<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/lib/pkp/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/styles/compiled.css" type="text/css" />
+
+	<!-- Base Jquery -->
+	<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js"></script>
+
+	
+	
+	<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/styles/sidebar.css" type="text/css" />		<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/styles/rightSidebar.css" type="text/css" />	
+			<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/public/site/sitestyle.css" type="text/css" />
+			<link rel="stylesheet" href="https://agronomiayambiente.agro.uba.ar/public/journals/1/journalStyleSheet.css" type="text/css" />
+	
+	<!-- Default global locale keys for JavaScript -->
+	
+<script type="text/javascript">
+	jQuery.pkp = jQuery.pkp || { };
+	jQuery.pkp.locale = { };
+			
+				jQuery.pkp.locale.form_dataHasChanged = 'Los datos de este formulario han cambiado. Desea continuar igualmente?';
+	</script>
+	<!-- Compiled scripts -->
+			
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/plugins/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/functions/fontController.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/functions/general.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/functions/jqueryValidatorI18n.js"></script>
+
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/classes/Helper.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/classes/ObjectProxy.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/classes/Handler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/classes/linkAction/LinkActionRequest.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/classes/features/Feature.js"></script>
+
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/SiteHandler.js"></script><!-- Included only for namespace definition -->
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/UrlInDivHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/AutocompleteHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/ExtrasOnDemandHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/form/FormHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/form/ClientFormHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/grid/GridHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/controllers/linkAction/LinkActionHandler.js"></script>
+
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/js/pages/search/SearchFormHandler.js"></script>
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/plugins/generic/lucene/js/LuceneAutocompleteHandler.js"></script>
+
+<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/plugins/jquery.pkp.js"></script>	
+	<!-- Add javascript required for font sizer -->
+	<script type="text/javascript">
+		<!--
+		$(function(){
+			fontSize("#sizer", "body", 9, 16, 32, ""); // Initialize the font sizer
+		});
+		// -->
+	</script>
+
+	<!-- Form validation -->
+	<script type="text/javascript" src="https://agronomiayambiente.agro.uba.ar/lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.js"></script>
+	<script type="text/javascript">
+		<!--
+		// initialise plugins
+		
+		$(function(){
+			jqueryValidatorI18n("https://agronomiayambiente.agro.uba.ar", "es_ES"); // include the appropriate validation localization
+			
+			$(".tagit").live('click', function() {
+				$(this).find('input').focus();
+			});
+		});
+		// -->
+		
+	</script>
+
+		
+	<link rel="alternate" type="application/atom+xml" title="Agronomía &amp; Ambiente (atom+xml)" href="https://agronomiayambiente.agro.uba.ar/?journal=AyA/gateway/plugin/WebFeedGatewayPlugin/atom" />
+	<link rel="alternate" type="application/rdf+xml" title="Agronomía &amp; Ambiente (rdf+xml)" href="https://agronomiayambiente.agro.uba.ar/?journal=AyA/gateway/plugin/WebFeedGatewayPlugin/rss" />
+	<link rel="alternate" type="application/rss+xml" title="Agronomía &amp; Ambiente (rss+xml)" href="https://agronomiayambiente.agro.uba.ar/?journal=AyA/gateway/plugin/WebFeedGatewayPlugin/rss2" />
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<div id="headerTitle">
+<h1>
+	<img src="https://agronomiayambiente.agro.uba.ar/public/journals/1/homeHeaderTitleImage_es_ES.gif" width="892" height="101" alt="Encabezado de página" />
+</h1>
+</div>
+</div>
+
+<div id="body">
+
+	<div id="sidebar">
+							<div id="rightSidebar">
+				<div class="block custom">
+	<p><span style="font-size: small;"><br /></span></p>
+<p><span style="font-size: small;"><a href="/index.php/AyA/pages/view/editores">Equipo Editorial</a></span></p>
+</div>	<div class="block" id="sidebarUser">
+			<span class="blockTitle">Usuario/a</span>
+	
+						<form method="post" action="https://agronomiayambiente.agro.uba.ar/?journal=AyA&page=login&op=signIn">
+				<table>
+					<tr>
+						<td><label for="sidebar-username">Nombre de usuario/a</label></td>
+						<td><input type="text" id="sidebar-username" name="username" value="" size="12" maxlength="32" class="textField" /></td>
+					</tr>
+					<tr>
+						<td><label for="sidebar-password">Contraseña</label></td>
+						<td><input type="password" id="sidebar-password" name="password" value="" size="12" maxlength="32" class="textField" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" id="remember" name="remember" value="1" /> <label for="remember">No cerrar sesión</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Iniciar sesión" class="button" /></td>
+					</tr>
+				</table>
+			</form>
+			</div> <div class="block" id="notification">
+	<span class="blockTitle">Notificaciones</span>
+	<ul>
+					<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=notification">Ver</a></li>
+			<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=notification&amp;op=subscribeMailList">Suscribirse</a></li>
+			</ul>
+</div>
+<div class="block" id="sidebarLanguageToggle">
+	<span class="blockTitle">Idioma</span>
+	<form action="#">
+		<select size="1" name="locale" onchange="location.href=('https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=user&amp;op=setLocale&amp;path%5B%5D=NEW_LOCALE&amp;source=%2F%3Fjournal%3DAyA'.replace('NEW_LOCALE', this.options[this.selectedIndex].value))" class="selectMenu"><option label="English" value="en_US">English</option>
+<option label="Español" value="es_ES" selected="selected">Español</option>
+</select>
+	</form>
+</div>
+<div class="block" id="sidebarNavigation">
+	<span class="blockTitle">Contenido de la revista</span>
+
+	<span class="blockSubtitle">Buscar</span>
+	<form id="simpleSearchForm" method="post" action="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=search&amp;op=search">
+		<table id="simpleSearchInput">
+			<tr>
+				<td>
+													<input type="text" id="simpleQuery" name="simpleQuery" size="15" maxlength="255" value="" class="textField" />
+								</td>
+			</tr>
+			<tr>
+				<td><select id="searchField" name="searchField" size="1" class="selectMenu">
+					<option label="Todos" value="query">Todos</option>
+<option label="Autores/as" value="authors">Autores/as</option>
+<option label="Título" value="title">Título</option>
+<option label="Resumen" value="abstract">Resumen</option>
+<option label="Términos de indexación" value="indexTerms">Términos de indexación</option>
+<option label="Texto completo" value="galleyFullText">Texto completo</option>
+
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Buscar" class="button" /></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+
+		<span class="blockSubtitle">Examinar</span>
+	<ul>
+		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=issue&amp;op=archive">Por número</a></li>
+		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=search&amp;op=authors">Por autor/a</a></li>
+		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=search&amp;op=titles">Por título</a></li>
+		
+			</ul>
+	</div>
+<div class="block custom">
+	<p><a href="http://ri.agro.uba.ar/greenstone3/library/collection/rfa/browse/CL3#CL3.29.1" target="_blank">Primeros 31 v&oacute;lumenes</a>&nbsp;<br />(ISSN: 0325-9250)<br />Todos los n&uacute;meros est&aacute;n disponibles en acceso abierto.</p>
+</div>	<div class="block" id="sidebarInformation">
+	<span class="blockTitle">Información</span>
+	<ul>
+		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=information&amp;op=readers">Para los lectores/as</a></li>		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=information&amp;op=authors">Para los autores/as</a></li>		<li><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=information&amp;op=librarians">Para los bibliotecarios/as</a></li>	</ul>
+</div>
+<div class="block" id="sidebarHelp">
+	<a class="blockTitle" href="javascript:openHelp('https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=help&amp;op=view&amp;path[]=user&amp;path[]=topic&amp;path[]=000001')">Ayuda de la revista</a>
+</div>
+			</div>
+			</div>
+
+<div id="main">
+<div id="navbar">
+	<ul class="menu">
+		<li id="home"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=index">Inicio</a></li>
+		<li id="about"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=about">Acerca de</a></li>
+
+					<li id="login"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=login">Iniciar sesión</a></li>
+							<li id="register"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=user&amp;op=register">Registrarse</a></li>
+												<li id="search"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=search">Buscar</a></li>
+		
+					<li id="current"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=issue&amp;op=current">Actual</a></li>
+			<li id="archives"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=issue&amp;op=archive">Archivos</a></li>
+		
+				
+
+									<li class="navItem" id="navItem-0"><a href="https://agronomiayambiente.agro.uba.ar/index.php/AyA/about/submissions#authorGuidelines">Normas de publicación</a></li>
+												<li class="navItem" id="navItem-1"><a href="https://agronomiayambiente.agro.uba.ar/index.php/AyA/information/authors">&gt;&gt; Envíe su Trabajo</a></li>
+																					</ul>
+</div>
+
+<div id="breadcrumb">
+	<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=index">Inicio</a> &gt;
+			<a href="https://agronomiayambiente.agro.uba.ar?journal=AyA" class="current">Vol. 45, núm. 2 (2025)</a></div>
+
+<h2>Agronomía & Ambiente</h2>
+
+
+<div id="content">
+
+
+
+	<div><p><em></em><strong>Agronomía y Ambiente</strong> es una revista de publicaciones científicas, técnicas y profesionales originales, de publicación semestral, cuyo objetivo es difundir trabajos científicos y académicos que abordan las temáticas inherentes a las áreas de conocimiento de las Ciencias Agronómicas y Ambientales, entre las cuales pueden mencionarse Ciencias Básicas, Producción Animal y Vegetal, Economía Agraria, Ciencias del Suelo, Agroecología, Mecanización Agrícola, Sanidad Vegetal, Educación en Ciencias Agropecuarias, Diseño y planeamiento del Paisaje y Formación General. Esta publicación está orientada a Ingenieros Agrónomos, Licenciados en Ciencias Ambientales, Biólogos, Químicos, Zootecnistas, Técnicos en Alimentación y todos aquellos profesionales relacionados con las Ciencias Agropecuarias y Ambientales. <span>Se encuentra indexada en LATINDEX, EBSCO, CAB ABSTRACTS International, SIDALC (Sistema de Información y Documentación Agropecuario de las Américas) y Núcleo Básico de Revistas Científicas Argentinas (CAICYT-CONICET). </span>La publicación es gratuita para los autores y lectores.</p></div>
+
+
+
+
+
+
+		<br />
+	<h3>Vol. 45, núm. 2 (2025)</h3>
+		<div id="issueDescription"></div>
+		<h3>Tabla de contenidos</h3>
+	 
+
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=319">Gestión de pérdidas de alimentos en los mercados mayoristas de frutas y hortalizas argentinos</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=319&amp;path%5B%5D=265" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Natalia Basso,							Sebastián Senesi						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=327">Household waste generation in Buenos Aires, Argentina: impact of COVID-19 lockdowns</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=327&amp;path%5B%5D=266" class="file">PDF (English)</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Veronica I. Pierini,							Nadia M. Mazzeo,							María Semmartin						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=324">Entramados de abastecimiento de alimentos: actores, dinámicas y precios en el Área Metropolitana de Buenos Aires (AMBA)</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=324&amp;path%5B%5D=268" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Joaquín Pérez Martín,							Juan Ignacio Fariña,							Santiago Páez						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+
+<div class="separator"></div>
+<h4 class="tocSectionTitle">Nota</h4>
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=321">Tolerancia de <em> Vicia villosa </em> Roth al exceso hídrico en un suelo proveniente de la cuenca del Río Salado (Argentina)</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=321&amp;path%5B%5D=267" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Ana Deluca,							Ileana García						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=351">La vitivinicultura y el turismo rural en la provincia de Buenos Aires: aportes desde un enfoque estratégico y competitivo</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=351&amp;path%5B%5D=269" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Hernán Palau,							Fernando A. Mogni,							Silvana Piro						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+
+<div class="separator"></div>
+<h4 class="tocSectionTitle">Opinión</h4>
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=379">Fundamentos científicos y no científicos en el posicionamiento agronómico de fertilizantes  de eficiencia mejorada</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=379&amp;path%5B%5D=271" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Martín Torres Duggan						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+
+<div class="separator"></div>
+<h4 class="tocSectionTitle">Método de caso</h4>
+		
+<table class="tocArticle" width="100%">
+<tr valign="top">
+		
+
+				
+					
+	<td class="tocTitle"><a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=376">Caso “Los nietos del valle”. Agricultura regenerativa y su impacto comercial en una pyme hortícola</a></td>
+	<td class="tocGalleys">
+									<a href="https://agronomiayambiente.agro.uba.ar/?journal=AyA&amp;page=article&amp;op=view&amp;path%5B%5D=376&amp;path%5B%5D=270" class="file">PDF</a>
+														
+			</td>
+</tr>
+<tr>
+	<td class="tocAuthors">
+									Sebastián I. Senesi,							Fernando A. Mogni,							Mariano A. Villani,							Hernán Palau						</td>
+	<td class="tocPages"></td>
+</tr>
+</table>
+
+
+
+	<br /><br />
+	<hr /><p><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/2.5/ar/88x31.png" alt="Licencia de Creative Commons" /><br />Esta obra está licenciada bajo una <a href="https://creativecommons.org/licenses/by-nc/2.5/ar/" rel="license">Licencia Creative Commons Atribución-NoComercial 2.5 Argentina </a>.</p><strong>Agronomía&amp;Ambiente. Revista de la Facultad de Agronomía (UBA)<br /></strong><p>ISSN 2344-9039 (en línea) - ISSN 2314-2243 (impreso)</p><p>Av. San Martín 4453 - C1417DSE - Buenos Aires - Argentina - Tel. +54-11-5287-0221 - <a href="mailto:efa@agro.uba.ar">efa@agro.uba.ar</a></p>
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "https://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("G-X4VBEND0RT");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- /Google Analytics -->
+
+</div><!-- content -->
+</div><!-- main -->
+</div><!-- body -->
+
+
+
+</div><!-- container -->
+</body>
+</html>

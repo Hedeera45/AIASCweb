@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPHATCAT's Hecking Webbed Site</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+<!-- if you changed your file name be sure to change it here below -->
+    <script src="../load.js"></script> 
+    
+  </head>
+  <body>
+
+
+        <div id="main-container">
+        
+        
+            <div id="header"></div>
+            
+            <div class="content-wrap flex alignment">
+                <div id="left-sidebar" style="display: block;">
+                    <div class="sidebar-wrapper">
+
+                        
+                        <p><img src="stuff/img/vk/mm_ryouhei_01.gif" style="width:100%; max-width:250px;" alt="Animated gif of visual kei guitarist Ryouhei from Megamasso">
+                        </p>
+                        
+                        <hr>
+                        
+                        <h3>site stats</h3>
+                        
+                        <p style="font-size: 14px;">
+                        launched 2022.04.24<br>
+                        <a href="https://neocities.org/site/tophatcats" target="_blank">neocities profile</a><br>
+                        <a href="https://www.imood.com/users/tophatcats"><img src="https://moods.imood.com/display/uname-tophatcats/trans-1/imood.gif" alt="The current mood of tophatcats at www.imood.com" border="0"></a><br>
+                        <a href="../colorstcg/index.html"><img src="https://tophatcats.neocities.org/colorstcg/img/pb_ange_01.png" alt="Colors TCG" title="Colors TCG"></a>
+						<a href="../moduletcg/index.html"><img src="https://tophatcats.neocities.org/moduletcg/img/cards/mc-Ange.png" alt="Module TCG" title="Module TCG"></a>
+						<a href="../sidequesttcg/index.html"><img src="https://tophatcats.neocities.org/sidequesttcg/img/cards/pb-Ange01.png" alt="Sidequest TCG" title="Sidequest TCG" height="80px" width="auto"></a>
+						</p>
+
+            
+                        <hr>
+                        
+                        <h3>featured pages</h3>
+                        
+                        <p style="font-size: 14px;">
+                        
+                        <img src="img/bul7.gif"><a href="fashion/ootdlog.html"> 2026 OOTD log</a><br>
+						<img src="img/bul7.gif"><a href="fashion/ootdlog2025.html"> 2025 OOTD log</a><br>
+						<img src="img/bul7.gif"><a href="art/snapgallery.html"> Snap Photo Diary</a><br>
+						<img src="img/bul7.gif"><a href="art/brushreviews.html"> Digital Brush Reviews</a><br>
+						<img src="img/bul7.gif"><a href="stuff/cds.html"> CD Collection</a><br>
+                        <img src="img/bul7.gif"><a href="stuff/tea.html"> Tea Doodle Log</a><br>
+                        <img src="img/bul7.gif"><a href="ocs/"> OC Masterlist</a><br>
+                        <img src="img/bul7.gif"><a href="art/artfight.html"> Art Fight Gallery</a><br>
+                        <img src="img/bul7.gif"><a href="stuff/ljarchive_index.html"> LJ Icon Archive</a><br>
+                        </p>
+                        
+                        <hr>
+                        
+                        <h3>latest outfits</h3>
+                        <p>
+                        <a href="fashion/ootdlog.html"><img src="fashion/img/ootdlog/2026/2617_0315.jpg" alt="A pastel blue, purple, pink, and black outfit with menhera and galaxy print elements" style="width:100%"></a></a>
+                        </p>
+                        
+                        
+                        <h3>latest wardrobe</h3>
+                        <p>
+                        <a href="fashion/wardrobe_egl.html"><img src="fashion/img/w_egl/sk_vf_guro.png" alt="Violet Fane - Gurotesque Melancholia Skirt" style="width:100%"></a>
+                        </p>
+                        
+                        <hr>
+                        
+                        <p>
+                        <img src="img/button.gif" alt="Tophatcats' button" title="my link button!">
+                        <a href="https://yesterweb.org/no-to-web3/"><img src="links/img/roly-saynotoweb3.gif" alt="Say no to Web3"></a>
+                        <a href="https://neocities.org/" target="_blank"><img src="img/neocities.gif" alt="NeoCities.org- the web is yours"></a>
+						<a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="img/riversea.gif" alt="From the river to the sea"></a>
+                        </p>
+                        
+                        <p style="font-size: 14px;">
+                        This site is rated 
+                        <a href="http://www.mabsland.com/Adoption.html"><img src="links/img/Censor_14c.gif" alt="Rated web 14" title="Site is rated web 14!"></a>
+                        </p>
+                        
+                        
+
+                    </div>
+                </div>
+                <div id="content-container" style="flex-grow: 1;">
+                    <div class="wrapper">
+                    
+                        <h1>tophatcats' hecking webbed site</h1>
+                        
+                        <h2><span class="highlight-container"><span class="highlight">hello, hello, world</span></span></h2>
+                        
+                        <div style="float:right; margin: auto; position: relative; height: auto; max-width: 40%; min-width: 170px;"><img src="img/welcome.png" style="width:100%" alt="Lolita fashion doodle."></div>
+                        
+                        <p>Welcome to this corner of the internet where I inflict my creativity upon the digital world. I organize my art, OCs, j-fashion blogging, and other odds and ends here. I wear casual lolita/egl, menhera, and an amalgamation of alternative fashion and weeb streetwear.</p>
+
+                        <p>Pardon the dust!</p>
+                        
+                        <p>Mobile ok. Best viewed on desktop.</p>
+						
+                        <hr>
+                        
+                        <h2><span class="highlight-container"><span class="highlight">updates</span></span></h2>
+                        
+                        <div style="height:310px; overflow:auto; border: solid 2px; border-color: #6c6276; margin-top:20px; padding: 8px; margin-bottom:50px;">
+                            
+							<h3>2026.04.01</h3>
+							<p>Continuing to update my <a href="stuff/tea.html">Tea Log</a>. I've added two skirts to my <a href="fashion/wardrobe_egl.html">EGL Wardrobe</a> and I'm catching up to my old 2023 outfit backlog (<a href="fashion/coords_egl.html">EGL</a> & <a href="fashion/coords_sweet.html">Sweet</a> pages). </p>
+							
+							<h3>2026.03.17</h3>
+							<p>I'm in a bad habit of pushing updates silently, but I've recently started a <a href="art/brushreviews.html"> Digital Brush Review</a> blog. In addition, I'm finally catching up on my <a href="fashion/ootdlog.html">OOTD log</a> for both this year and <a href="fashion/ootdlog2025.html">2025</a>. Also been updating my <a href="yume/atelier-rougelian/artlog.html">yumeship art log</a> with doodles if canon x oc is your cup of tea.</p>
+							
+							<h3>2026.03.07</h3>
+                            <p>Updates to the <a href="stuff/ljarchive_index.html">LJ Icon Archive</a>: Kingdom Hearts, Higurashi, and Umineko!</p>
+							
+							<h3>2025.10.25</h3>
+                            <p>A very quick index update: <a href="art/prompts2025.html">October 2025 Art Prompts</a> (OC-tober, Yumetober, JJTober) and I finally did a writeup for my <a href="art/prompts2025_jj25.html">Jack Jeanne Mary!Fumi cosplay</a> I did in 2023.</p>
+							
+							<h3>2025.06.07</h3>
+                            <p>I'm updating small things here and there, but here's a bigger DIY project: a <a href="stuff/ita_index.html">Digital Ita Bag</a>! There are also some handmade <a href="stuff/ita_graphics.html">free to use graphics</a> (border decorations) and also some <a href="stuff/ita_templates.html">templates</a> if you want to make your own bag??? </p>
+							
+							<hr>
+							
+							<div class="banner-button">
+							  <img src="art/img/earlcomms/art_earlcomms.jpg" width="100%">
+							  <div class="overlay">
+							  <div class="overlay-text"><a href="art/earlcomms.html" style="font-size:28px;line-height:30px">Doodle Comms (pet vet bills)<img src="https://tophatcats.neocities.org/img/upg7.gif" alt="updated"></a></div>
+							  </div>
+							</div>
+							</hr>
+							
+							<h3>2025.02.24</h3>
+                            <p>I'm always posting something late on Sunday nights. :P New gallery page: <a href="art/snapgallery.html">Photo diary</a> with a funky little point and shoot "disposable style" screenless digital camera.</p>
+							
+							<h3>2025.02.21</h3>
+                            <p>Finished my EGL salopette <a href="fashion/wardrobe_egl.html">wardrobe collection</a> (5 of 5)!</p>
+							
+							<h3>2025.02.20</h3>
+                            <p>Continuing to work on <a href="fashion/ootdlog.html">2025 OOTD log</a>!</p>
+							
+							<h3>2025.02.16</h3>
+                            <p>Opening up some doodle commissions to help a friend with pet bills! See the banner above. These are very discounted compared to my usual comm menu. </p>
+							
+							<h3>2025.01.09</h3>
+                            <p>New mini project page! <a href="stuff/tea.html">Completed Tea Log</a> with tea tin and packaging doodles.</a>
+							
+							<h3>2025.01.05</h3>
+                            <p>I'm splitting up the WIP 2024 ootd backlog, so I can jump into my new coordinates! <a href="fashion/ootdlog.html">2025 ootd log</a>!</a>
+							
+							<h3>2025.01.02</h3>
+                            <p>Happy new year! I hope 2025 will be kind to you. First project of the new year is a big one: <a href="stuff/cds.html">CD collection!!</a> I made transparent pngs of... too many things in one sitting for this.</p>
+							<p>I'm also still taking doodle requests (mini banner above). My queue is empty right now!!</a>
+							
+							<h3>2024.12.17</h3>
+                            <p>Making an effort to catch up with my <a href="fashion/ootdlog.html">OOTD backlog</a>. Finished February, and I'm into March now. ;v;</p>
+							
+							<h3>2024.12.07</h3>
+                            <p>I meant to announce this last week, but I'm opening art doodle requets (and art trades) for the end of the year holidays / new years! You can find info in the banner above. I want to draw your fav / oc / yumeship! </p>
+							
+							<h3>2024.11.19</h3>
+                            <p>Doing an overhaul of my OOTD section so it's easier to update and catch up with my backlog. I'm combining it all into a single feed now: <a href="fashion/ootdlog.html">OOTD Log</a>. The old pages will still be around. Secondly, I'm sticking around here on Neocities, but I made a <a href="https://tophatcats.nekoweb.org/">one page microblog</a> on Nekoweb for fun. >:3c Lastly, I've been updating my art blog here every other week. I just don't really mention it here (whoops!).</p>
+							
+							<h3>2024.09.29</h3>
+                            <p>Finally updated my <a href="fashion/wardrobe_egl.html">EGL wardrobe</a> drawings again. Two new skirts to complete the category.</p>
+							
+							<h3>2024.09.15</h3>
+                            <p>Art blog post! Snippet below.</p>
+							
+							<h3>2024.09.10</h3>
+                            <p>OC <a href="ocs/refhub.html">Ref Hub</a> is up and running. Working on getting more characters in. Added separate <a href="yume/index.html">Yume</a> section and portal. Updated <a href="links/index.html">links</a>.</p>
+							
+                            <h3>2024.09.01</h3>
+                            <p>Added my <a href="art/artfight.html">2024 Art Fight attacks</a> to the gallery. Started working on my outfit backlog with the rest of my <a href="fashion/coords_weeb.html">2023 weeb outfits</a> (Visual Prison -> Jack Jeanne brainrot era). ALSO HI actual art blog post (see snippet below).</p>
+							
+							<h3>2024.08.31</h3>
+                            <p>Added a page for my <a href="stuff/myicons.html">Dreamwidth icons</a>. I keep running out of space, and I need to put the retired ones somewhere. ;v;</p>
+							
+							<h3>2024.08.28</h3>
+                            <p>I'm back?? Maybe??? I got hit with 2010 nostalgia and did a huge update of <a href="stuff/ljarchive_index.html">1000+ LJ icons</a> in the archive. The remaining series that are listed will probably need their own subpages due to the sheer volume of images. I'm not ready to sort through some of those massive folders just yet...</p>
+							
+							<h3>2023.08.19</h3>
+                            <p>Hiii it's been awhile. I've uploaded all my art fight attacks from this year to the <a href="art/artfight.html">gallery</a>. Between AF all of July and then getting hooked on a new otome game (Jack Jeanne) I've been really happy drawing in my free time again. ;v; I'm posting more on tumblr these days (outfits, doodles, otome game shitposting), but I do want to properly organize things here at some point... </p>
+                            
+                            <h3>2023.06.21</h3>
+                            <p>New OCs added to the <a href="ocs/index.html">roster</a>: a Genshin Impact blorbo and a self-indulgent Visual Prison blorbo.</p>
+                            
+                            <h3>2023.06.12</h3>
+                            <p>Big outfit update! <a href="fashion/coords_egl.html">5 new EGL</a>, <a href="fashion/coords_sweet.html">3 new girly kei</a>, <a href="fashion/coords_weeb.html">4 new weeb</a>, and <a href="fashion/coords_dark.html">10 new dark fashion</a> coordinates. </p>
+                            <p>I'm very sneakily updating my site again here and there. In addition to falling into Colors TCG, I've been temporarily consumed by Genshin Impact and then Visual Prison again. I want to update my OC pages, partially in preparation for Art Fight. Hmmmmmm. </p>
+                            
+                            <h3>2023.03.27</h3>
+                            <p>I was out sick recently, but I'm back! ;v; <a href="fashion/coords_egl.html">1 new EGL coord</a> and  <a href="fashion/coords_dark.html">3 casual dark</a> outfits. </p>
+                            
+                            <h3>2023.02.12</h3>
+                            <p>Ahoy! New goodies: <a href="stuff/scans_vp.html">select/cropped Visual Prison scans</a> from the blu-ray collection of covers and booklet sketches (WIP). <a href="fashion/coords_egl.html">1 new EGL coord</a>,  <a href="fashion/coords_weeb.html">1 new weeb outfit</a>, and another <a href="fashion/coords_dark.html">5 casual dark</a>. </p>
+                            
+                            <h3>2023.01.22</h3>
+                            <p>Super late, but happy new year! I'm catching up on my outfit backlog as usual, but I have some other site updates in mind! <a href="fashion/coords_egl.html">3 new EGL coords</a>,  <a href="fashion/coords_weeb.html">1 new weeb outfit</a>, and <a href="fashion/coords_dark.html">5 casual dark</a>. </p>
+                            
+                            <h3>2022.12.19</h3>
+                            <p>December outfit dump! I'm officially away on holiday, huzzah. I love the combo of reds, blacks, burgundy, and old school tartan.  <a href="fashion/coords_egl.html">4 new EGL coords</a> and <a href="fashion/coords_dark.html">1 casual dark</a>. </p>
+                            
+                            <h3>2022.12.04</h3>
+                            <p>Still just outfit updates, sorry! Happy winter International Lolita Day~  <a href="fashion/coords_egl.html">2 new EGL coords</a>. </p>
+                            
+                            <h3>2022.11.15</h3>
+                            <p>Outfits!! <a href="fashion/coords_egl.html">2 new EGL coords</a> and <a href="fashion/coords_sweet.html">1 new casual sweet outfit</a>. I'm still absolutely lost in the sauce with Colors TCG... This past weekend, I woke up and decided "let's hack together some javascript card sorters!!" :P </p>
+                            
+                            <h3>2022.10.31</h3>
+                            <p>Happy Halloween! 2 new outfits: <a href="fashion/coords_egl.html">1 new EGL coord</a> and <a href="fashion/coords_menhera.html">1 new menhera outfit</a>. I added a transparent Sasazuka chibi to the <a href="stuff/scans_cxm.html">Collar x Malice scans</a> page. Added contact info on the <a href="about/">About</a> page.</p>
+                            
+                            <h3>2022.10.25</h3>
+                            <p>I've been in an EGL mood since rewatching Kamikaze Girls a few weeks ago! <a href="fashion/coords_egl.html">4 new EGL coords</a>.</p>
+                            
+                            <h3>2022.10.09</h3>
+                            <p>I'm in a bit of an update slump with the rest of my pages, but I have more outfits. Added 4 new: <a href="fashion/coords_egl.html">3 egl</a>, <a href="fashion/coords_dark.html">1 casual dark</a>.</p>
+                            
+                            <h3>2022.09.28</h3>
+                            <p>Added 2 new outfits: <a href="fashion/coords_dark.html">2 casual dark</a>.</p>
+                            
+                            <h3>2022.09.24</h3>
+                            <p>Added 2 new outfits: <a href="fashion/coords_sweet.html">1 casual sweet</a>, and <a href="fashion/coords_dark.html">1 casual dark</a>. Updated the Links page with a few more buttons.</p>
+                            
+                            <h3>2022.09.11</h3>
+                            <p>Added 4 new outfits: <a href="fashion/coords_sweet.html">2 casual sweet</a>, and <a href="fashion/coords_dark.html">2 casual dark</a>.</p>
+                            
+                            <h3>2022.08.29</h3>
+                            <p>Going through and updating <a href="links/index.html">links</a>! </p>
+                            
+                            <h3>2022.08.28</h3>
+                            <p>Chipping away at my <a href="fashion/wardrobe_egl.html">EGL wardrobe</a>. Added 2 new skirts.</p>
+                            
+                            <h3>2022.08.27</h3>
+                            <p>It's a hot gothic summer. /melts Added 5 new outfits: <a href="fashion/coords_egl.html">2 egl</a>, and <a href="fashion/coords_dark.html">3 casual dark</a></p>
+                            
+                            <h3>2022.08.23</h3>
+                            <p>I've created a <a href="/art/artblog_index.html">Sketch Blog</a> for dumping doodles and thoughts and inspo.</p>
+                            
+                            <h3>2022.08.21</h3>
+                            <p>I'm not happy with the temp layout, but I have a <a href="art/gallery.html">Gallery page</a> up with select fanart and nameless OC stuff. I think I want to break it out into a separate layout eventually.</p>
+                            
+                            <h3>2022.08.14</h3>
+                            <p>I'm working on a <a href="stuff/ljarchive_index.html">huge archive dump</a> of some 7,000+ LJ icons I collected back in the day. Amazingly all of that is under 160MB. Very big WIP. You can see how I put these into use by making super funky <a href="stuff/lj_iconpages.html">rainbowy aesthetic pages to decorate my school stuff</a>. </p>
+                            
+                            <h3>2022.08.06</h3>
+                            <p>Updating OC pages. Added more to the <a href="/stuff/scans_cxm.html">Collar x Malice gallery</a>.</p>
+                            
+                            <h3>2022.08.02</h3>
+                            <p>Added 4 new outfits from last month: <a href="fashion/coords_egl.html">2 egl</a>, <a href="fashion/coords_sweet.html">1 pastel</a> and <a href="fashion/coords_dark.html">1 casual dark</a></p>
+                            
+                            <h3>2022.07.31</h3>
+                            <p>I went all out with art fight this year but I am finally done now! All my pieces have been uploaded to my <a href="art/artfight.html">gallery page here</a>, and I’ll be cataloging all the defenses I got on my OC pages later. PHEW. Side note: I wish I had time to do more attacks, but like 99.9% of the time I was sweating at my revenge queue hahaha.</p>
+                            
+                            <h3>2022.07.08</h3>
+                            <p>My brain is 1000% in Art Fight mode right now, so I’ve started <a href="art/artfight.html">adding my drawings here</a>!! I’m challenging myself to do fully composed illustrations (character and scene background) and it’s been very rewarding. <a href="https://artfight.net/~tophatcats">Please feel free to fight me</a> if you are participating! (I’m team Bloom, but I’m happy to do friendly fire - especially if you are a neocities mutual!)</p>
+                            
+                            <h3>2022.06.26</h3>
+                            <p>Added three new <a href="fashion/coords_sweet.html">pastel outfits</a> and one <a href="fashion/coords_weeb.html">weeb outfit</a> featuring a Dark Magician Girl shirt.  </p>
+                            
+                            <h3>2022.06.23</h3>
+                            <p>Art Fight is soon upon us! I've made a <a href="art/artfight.html">gallery</a> for last year's attacks.</p>
+                            
+                            <h3>2022.06.19</h3>
+                            <p>I’ve been on a huge drawing spree in preparation for <a href="https://artfight.net/~tophatcats">artfight</a>. I’m still adding extra content on my OC pages <a href="ocs/cy.html">here</a> and <a href="ocs/nao.html">there</a>. I have really strong brainworms for making illustrations in the style of VN CGs right now ahhhh. I have some outfits and scans to clean up and post in my backlog too.</p>
+                            
+                            <h3>2022.06.08</h3>
+                            <p>This is rushed because work is hellish this week, but it is the birthday of my fav anime boy Takeru Sasazuka! <img src="img/speech_love.gif" alt="heart pixel art"> I put a <a href="stuff/scans_cxm.html">small selection of artwork</a> from my Collar x Malice artbook collection online... because I don't know when I'll get around to making my blog layout with them hahaha.</p>
+                            
+                            <h3>2022.06.05</h3>
+                            <p>Added more outfits: <a href="fashion/coords_egl.html">2 EGL</a> and <a href="fashion/coords_dark.html">3 casual/dark/misc</a>. Some small udpates to the About and About the Webmaster pages.</p>
+                            
+                            <h3>2022.05.30</h3>
+                            <p>Finally finished editing and compiling <a href="/art">A HUGE DUMP of journal comics</a> from 2012-2016.</p>
+                            
+                            
+                            <h3>2022.05.22</h3>
+                            <p>New outfits added: <a href="fashion/coords_egl.html">2 EGL</a> and <a href="fashion/coords_dark.html">4 casual/dark/misc</a>. Added 2 new skirts to the <a href="fashion/wardrobe_egl.html">EGL wardrobe</a> page. Continuing to add to my <a href="/ocs">OC Masterlist</a>. I adopted two new chars recently, so I need to add them plus some others.</p>
+                            
+                            
+                            <h3>2022.05.15</h3>
+                            <p>Started taking a swing at my OC pages, including my most favorite, awful, edgelord anime daughter <a href="ocs/accelera.html">Accelera</a>. </p>
+                            
+                            
+                            <h3>2022.05.14</h3>
+                            <p>Various updates including new <a href="fashion/coords_dark.html">Casual Dark outfits</a> and <a href="fashion/coords_weeb.html">Weeb outfits</a>. Cute new pixel icons are from the lovely <a href="http://whimsical.heartette.net/" target="_blank">Whimsical</a>. +2 new skirts to <a href="fashion/wardrobe_egl.html">EGL wardrobe</a>.</p>
+                            
+                            
+                            <h3>2022.05.09</h3>
+                            <p>Collecting cool sites on the new <a href="links/">Links</a> page. Also hi, visual kei gifs I made just over 10 years ago.</p>
+                            
+                            <h3>2022.05.08</h3>
+                            <p>New <a href="fashion/coords_sweet.html">Sweet Coords</a> page with outfits from this year so far. Started <a href="fashion/coords_egl.html">EGL & Otome Coords</a> page - WIP. Kicked off the <a href="fashion/wardrobe_egl.html">EGL Wardrobe Page</a> with 2 out of 30-something items.</p>
+                            
+                            <h3>2022.05.01</h3>
+                            <p>New <a href="fashion/coords_menhera.html">Menhera Coords</a> page. Added info in <a href="about/">About</a>.</p>
+                            
+                            <h3>2022.04.24</h3>
+                            <p>We are liveeee.</p>
+                        </div>
+                        
+                        <h2><span class="highlight-container"><span class="highlight">latest blog entry</span></span></h2>
+                        <p><a href="art/artblog_index.html">[2024.11.17]</a> Huevember<br>+ recent art inspo/goodies<br>+ 5 huevember pieces</p>
+                        <p style="text-align:center">
+                        <a href="art/artblog_index.html"><img src="art/img/artblog/entries/202411/0074_resize.jpg" alt="Ceres from Virche Evermore" style="max-width:34%;"> <img src="art/img/artblog/entries/202411/0085_resize.jpg" alt="Jamil from Twisted Wonderland" style="max-width:34%;"></a>
+                        </p>
+                        <hr>
+
+                  			<p style="text-align:center">
+                  			<img src="stuff/img/gifs_vp/vp_beth_02_360p.gif" style="max-width:100%; width:250px;margin-left:auto; margin-right:auto; display:block;"><br>
+                  			Thanks for checking out my site! Enjoy your stay.
+                  			</p>
+
+				
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div id="right-sidebar" style="display: none;">
+                    <div class="sidebar-wrapper">
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      A Working Library
+    </title>
+    <meta charset="utf8">
+    <meta name="author" content="Mandy Brown">
+    <meta name="google-site-verification" content="oMwQ-hs8YE2y6eDWsEkQ6pmG1aRE8c5idsf2_crnFHI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
+    <meta property="og:site_name" content="A Working Library">
+    <meta property="og:type" content="  website">
+    <meta name="description" content="A working library is a blog about work, reading & technology by Mandy Brown."/>
+    <meta property="og:description" content="A working library is a blog about work, reading & technology by Mandy Brown."/>
+    <meta property="og:title" content="">
+    <meta property="og:url" content="https://aworkinglibrary.com/index.html">
+    <meta property="og:image" content="/img/social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="A working library is a blog about work, reading & technology by Mandy Brown">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="A working library is a blog about work, reading & technology by Mandy Brown.">
+    <meta property="twitter:url" content="https://aworkinglibrary.com/index.html">
+    <meta property="twitter:image" content="/img/social.png">
+    <meta name="twitter:image:alt" content="A working library is a blog about work, reading & technology by Mandy Brown">
+    <link href="/css/main.css?v20170619" rel="stylesheet" media="all"/>
+    <link rel="alternate" type="application/rss+xml" title="A Working Library RSS" href="/feed/index.xml"/>
+    <!--Typekit-->
+    <link rel="stylesheet" href="https://use.typekit.net/fhq2xej.css">
+    <!--Fathom-->
+    <script src="https://cdn.usefathom.com/script.js" data-site="EZTWTMRX" defer></script>
+  </head>
+  <body id="">
+    <header role="banner">
+      <div id="callout">
+        <div class="container">
+          <p><a href="https://everythingchanges.us/">Practice the future</a> &rarr;</p>
+        </div>
+      </div>
+      <nav role="navigation" id="menu" class="menu">
+        <div class="container">
+          <ul>
+            <li id="re"><a href="/reading">Reading</a></li>
+            <li id="wr"><a href="/writing">Writing</a></li>
+            <li id="th"><a href="/thinking">Thinking</a></li>
+            <li id="ab"><a href="/about">About</a></li>
+            <li id="su"><a href="/subscribe">Subscribe</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <a id="home" href="/">
+          <div id="title">
+            <h1>A working library is a blog about work, reading &amp; technology  <em><i>by</i>&nbsp;Mandy&nbsp;Brown</em></h1>
+          </div>
+        </a>
+      </div>
+    </header>
+    <div class="container page-container">
+      <div role="main">
+        <article class="note brief">
+          <time datetime="2026-04-30 06:46:00 -0400">2026-04-30</time>
+          <header>
+            <h1 class="title"><a href="/writing/correct-attitude">The “correct” attitude</a></h1>
+            <h2 class="rel-books">On <em>Reclaiming Work</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-04-29 15:57:00 -0400">2026-04-29</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/third-reich-of-dreams">The Third Reich of Dreams</a></h1>
+              <h2 class="author">Charlotte Beradt</h2>
+            </header>
+            <a href="/reading/third-reich-of-dreams"><img class="cover" src="/img/beradt-third-reich-of-dreams.jpg"/></a>
+          </div>
+          <p>In 1933, shortly after Hitler took power, Charlotte Beradt started having nightmares.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-04-22 08:31:00 -0400">2026-04-22</time>
+          <header>
+            <h1 class="title"><a href="/writing/automation-conformity">Automation conformity</a></h1>
+            <h2 class="rel-books">On <em>The Meaning of Anxiety</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-04-22 08:30:00 -0400">2026-04-22</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/meaning-of-anxiety">The Meaning of Anxiety</a></h1>
+              <h2 class="author">Rollo May</h2>
+            </header>
+            <a href="/reading/meaning-of-anxiety"><img class="cover" src="/img/may-meaning-of-anxiety.jpg"/></a>
+          </div>
+          <p>Rollo May refutes the assertion that mental health is living <em>without</em> anxiety, proposing instead that anxiety is a necessary condition for creativity, intellect, and freedom.</p>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-04-20 19:53:00 -0400">2026-04-20</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/orbital">Orbital</a></h1>
+              <h2 class="author">Samantha Harvey</h2>
+            </header>
+            <a href="/reading/orbital"><img class="cover" src="/img/harvey-orbital.jpg"/></a>
+          </div>
+          <p>Six people—four astronauts and two cosmonauts—may be among the last to circle the Earth.</p>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-04-08 07:30:00 -0400">2026-04-08</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/we">We</a></h1>
+              <h2 class="author">Yevgeny Zamyatin</h2>
+            </header>
+            <a href="/reading/we"><img class="cover" src="/img/zamyatin-we.jpg"/></a>
+          </div>
+          <p>In a glass-walled city ruled by the totalitarian One State, citizens have no privacy, no identity, no freedom, and no names: they each bear only a number.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-03-18 07:50:00 -0400">2026-03-18</time>
+          <header>
+            <h1 class="title"><a href="/writing/reformed">Reformed</a></h1>
+            <h2 class="rel-books">On <em>A Strategy for Labor</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-03-14 11:52:00 -0400">2026-03-14</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/salt-eaters">The Salt Eaters</a></h1>
+              <h2 class="author">Toni Cade Bambara</h2>
+            </header>
+            <a href="/reading/salt-eaters"><img class="cover" src="/img/bambara-salt-eaters.jpg"/></a>
+          </div>
+          <p>“Are you sure, sweetheart, that you want to be well?”</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-02-19 12:09:00 -0500">2026-02-19</time>
+          <header>
+            <h1 class="title"><a href="/writing/designed-to-be-specialists">Designed to be specialists</a></h1>
+            <h2 class="rel-books">On <em>A Strategy for Labor</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-02-18 06:23:00 -0500">2026-02-18</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/waves">The Waves</a></h1>
+              <h2 class="author">Virginia Woolf</h2>
+            </header>
+            <a href="/reading/waves"><img class="cover" src="/img/woolf-waves.webp"/></a>
+          </div>
+          <p>Six children—three girls and three boys—play in a garden by the sea.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-02-12 07:38:00 -0500">2026-02-12</time>
+          <header>
+            <h1 class="title"><a href="/writing/pseudo-culture">Pseudo-culture</a></h1>
+            <h2 class="rel-books">On <em>A Strategy for Labor</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-02-12 07:35:00 -0500">2026-02-12</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/strategy-for-labor">A Strategy for Labor</a></h1>
+              <h2 class="author">André Gorz</h2>
+            </header>
+            <a href="/reading/strategy-for-labor"><img class="cover" src="/img/gorz-strategy-for-labor.jpg"/></a>
+          </div>
+          <p>“A system that makes people work like zombies to produce useless, destructive, or self-destructive things has outlived its usefulness.”</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-01-22 09:22:00 -0500">2026-01-22</time>
+          <header>
+            <h1 class="title"><a href="/writing/patient-urgency">Patient urgency</a></h1>
+            <h2 class="rel-books">On <em>Burnout</em> <span>&amp;</span> <em>The Real World of Technology</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-01-21 08:17:00 -0500">2026-01-21</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/cancer-journals">The Cancer Journals</a></h1>
+              <h2 class="author">Audre Lorde</h2>
+            </header>
+            <a href="/reading/cancer-journals"><img class="cover" src="/img/lorde-cancer-journals.webp"/></a>
+          </div>
+          <p>Between 1978 and 1980, Audre Lorde wrote about her experience with breast cancer and mastectomy, connecting her trials and treatment to her own work and to the collective effort of liberation for all women.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-01-15 06:49:00 -0500">2026-01-15</time>
+          <header>
+            <h1 class="title"><a href="/writing/loss-of-an-ideal">Loss of an ideal</a></h1>
+            <h2 class="rel-books">On <em>Burnout</em> <span>&amp;</span> <em>The Burnout Society</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-01-15 06:45:00 -0500">2026-01-15</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/burnout">Burnout</a></h1>
+              <h2 class="author">Hannah Proctor</h2>
+            </header>
+            <a href="/reading/burnout"><img class="cover" src="/img/proctor-burnout.jpg"/></a>
+          </div>
+          <p>Hannah Proctor visits the concept of burnout as the experience of political defeat—the disappointment, despair, and grief that emerges when one becomes aware that the political project they have committed themselves to may not succeed.</p>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-01-15 06:30:00 -0500">2026-01-15</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/sisters-of-the-yam">Sisters of the Yam</a></h1>
+              <h2 class="author">bell hooks</h2>
+            </header>
+            <a href="/reading/sisters-of-the-yam"><img class="cover" src="/img/hooks-sisters-of-the-yam.jpg"/></a>
+          </div>
+          <p>bell hooks approaches notions of self-care among communities of Black women, locating it within the work of grief, testimony, and reconciliation.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2026-01-06 07:24:00 -0500">2026-01-06</time>
+          <header>
+            <h1 class="title"><a href="/writing/tyrannies-and-servilities">Tyrannies and servilities</a></h1>
+            <h2 class="rel-books">On <em>A Room of One’s Own and Three Guineas</em></h2>
+          </header>
+        </article>
+        <article class="book brief">
+          <time datetime="2026-01-05 08:05:00 -0500">2026-01-05</time>
+          <div class="wrap">
+            <header>
+              <h1 class="title book-title"><a href="/reading/annals-of-the-western-shore">Annals of the Western Shore</a></h1>
+              <h2 class="author">Ursula K. Le Guin</h2>
+            </header>
+            <a href="/reading/annals-of-the-western-shore"><img class="cover" src="/img/le-guin-annals-of-the-western-shore.jpg"/></a>
+          </div>
+          <p>In these three short novels, Le Guin takes us to the Western Shore, where people of magic and people of war and people of books all try to make their lives together.</p>
+        </article>
+        <article class="note brief">
+          <time datetime="2025-12-18 06:20:00 -0500">2025-12-18</time>
+          <header>
+            <h1 class="title"><a href="/writing/what-books-are-for">What books are for</a></h1>
+            <h2 class="rel-books">On <em>Mitz</em>, <em>Words Are My Matter</em>, <em>A Room of One’s Own and Three Guineas</em> <span>&amp;</span> <em>The Left Hand of Darkness</em></h2>
+          </header>
+        </article>
+        <div class="page">
+          <ol>
+            <li><a href="/2/">Next &rarr;</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer>
+        <small>
+          <section class="letter">
+            <div class="hgroup">
+              <h1>Newsletter</h1>
+              <h2>Reading, technology & the future of work</h2>
+            </div>
+            <form action="https://buttondown.email/api/emails/embed-subscribe/aworkinglibrary"
+  method="post"
+  class="embeddable-buttondown-form">
+              <label for="bd-email">Email address</label>
+              <input type="email" name="email" id="bd-email" placeholder="email address" />
+              <input type="hidden" value="1" name="embed"/>
+              <input type="submit" value="subscribe" />
+            </form>
+          </section>
+          <ul>
+            <li class="feed"><a href="/feed/index.xml">RSS</a></li>
+            <li><a href="/colophon/">Colophon</a></li>
+            <li><a href="/copyright/">Copyright</a> &copy; 2008-2026 Mandy Brown</li>
+            <li><a href="mailto:mandy@aworkinglibrary.com">mandy@aworkinglibrary.com</a></li>
+            <li><a rel="me" href="https://mstdn.social/@aworkinglibrary">@aworkinglibrary</a></li>
+          </ul>
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>

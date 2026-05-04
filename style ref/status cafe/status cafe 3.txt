@@ -1,0 +1,192 @@
+<img src="https://64.media.tumblr.com/tumblr_ma31hur9cb1qid2nw.gif" style="opacity:0.9"><p>&nbsp;<br>
+<b>about :</b><p>
+<small>&nbsp;about<p>
+&nbsp;about<p>
+</small><p><p>&nbsp;<p>
+images :<p>
+<img src=""><br>
+ 
+ 
+<style>
+/* include links to your cursor, background and change colors and fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+ 
+body {
+max-width: 400px;
+margin-top: 60px;
+padding: 5px;
+font-family: 'Autour One', sans-serif;
+font-size: 9px;
+color: #bf928d;
+background-color: #f4deda;
+background-image: url("https://64.media.tumblr.com/70c5844ae6a9df837e42740cde3cfb58/tumblr_mqvzpi9RgI1sdgezwo2_400.gif");
+background-repeat: repeat;
+background-position: center;
+}
+ 
+h1 {
+font-size: 9px;
+}
+ 
+h2 {
+	color: white;
+        font-size: 0px;
+}
+ 
+dt.about,
+.about h2,
+.about::before,
+.about::after {
+  display: none !important;
+  content: none !important;
+}
+ 
+.status .username,
+.status .status-username,
+.status .status-user {
+  display: none !important;
+}
+ 
+/* Status Posts */
+.status {
+font-size: 9px;
+  border: 1.5px solid mistyrose;
+  border-radius: 5px;
+  padding: 20px 20px 15px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+ 
+.status::before {
+  content: url("https://64.media.tumblr.com/tumblr_lfhtzzNmLw1qzvcyt.gif");
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  font-size: 10px;
+  transform: rotate(-10deg);
+}
+ 
+.status::after {
+  content: url("https://64.media.tumblr.com/a6f523e847b5bc5898035a94ee8b286d/176896c495d5982c-c1/s250x400/2e1b66ac9efeb6ee1e3e7d097b0e238d0e273809.gif");
+  transform: scale(0%);
+  position: absolute;
+  bottom: -12px;
+  right: -10px;
+  font-size: 9px;
+}
+ 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+color: #bf928d;
+font-size: 7px;
+text-decoration: none;
+}
+ 
+header a + a::before {
+  content: " & ";
+  margin: 0 6px;
+}
+ 
+ 
+/* change navi style */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+top: 15px;
+background-color: #FFF;
+border: 2px dotted #fcdccd;
+outline: 7px solid white;
+padding: 20px;
+word-spacing: 10px;
+font-size: 3px;
+margin-bottom: 20px;
+}
+ 
+/* change columns style below */
+ 
+.cols {
+display: grid;
+grid-template-columns: 100px 1fr;
+grid-gap: 20px;
+margin-top: 10px;
+font-size: 10px;
+}
+ 
+section {
+background-color: #FFF;
+border: 2px dotted #fcdccd;
+outline: 7px solid white;
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+ 
+section:first-child {
+height: 450px;
+overflow-y: scroll;
+}
+ 
+section:last-child {
+height: 450px;
+background-size: cover;
+overflow-y: scroll;
+}
+ 
+ 
+ 
+  .status-user {
+    color: #efbabc;
+    font-size: 0px;
+  }
+ 
+  .status-username {
+    color: #efbabc;
+    font-size: 0px;
+  }
+ 
+ 
+/* change 'subscribe via atom' style here */
+a[href*="atom"] {
+  font-size: 0em;
+  text-decoration: ;
+  letter-spacing: 1px;
+}
+ 
+.email { 
+display: none; 
+}
+ 
+.about::before,
+.about *::before {
+  content: none !important;
+}
+ 
+.about {
+  line-height: 0.3;
+margin-top: -30px;
+margin-left: 0px;
+margin-right:10px;
+font-size: 8px;
+}
+ 
+.about img {
+  opacity: 50%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width:100%;
+}
+ 
+.homepage {
+display: none;
+}
+ 
+ 
+</style>

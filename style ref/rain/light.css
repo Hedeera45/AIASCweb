@@ -1,0 +1,658 @@
+/*=== LIGHT RAIN ===*/
+/*= last modified 02 may 25 =*/
+
+/*heya!! were leaving a bunch of documentation in these new stylesheets so theres better info on whats actually going on internally (both for anyone that wants to use these and so future us isnt so confused abt what xe wrote in the past). therell be basically identical versions of this notice and the documentation itself in the other stylesheets as well, just to make sure the info is fairly accessible. this is def still a little cluttered and could prob be ordered better but we tried to actually keep it fairly well put together this time x~x
+
+theres some older dummied out stuff from earlier in the process of styling the site that's present in default dark's stylesheet but not here bcuz it was made as we worked on the site. to our knowledge weve removed most of it from all the other stylesheets (like this one!) but if we missed smth and u see it in here be advised that there's missing context!
+
+we hope you get some use out of all this, and thanx for checking things out!!*/
+
+
+/*this section declares a bunch of variables so i dont have to edit things over and over to change the colors around.*/
+:root{
+	--bgimg: url("/style/rainshapes.png"); /*for the bg image on most pages*/
+	--logoimg: url("/style/bannerlight.png"); /*for the site logo image*/
+	--bgvoid: #fafafa;		/*for the plain page bg, when its visible*/
+	--bg: #f2f9f9dd;		/*for the bg of the boxes that hold the actual page content*/
+	--text: #111;			/*the main text color (this is offblack instead of pure black so the contrast isnt as hard)*/
+	--textsecret: #1110;	/*for secret invisible text*/
+	--deco: #666;			/*the color of the pipe characters that act as dividers in the navbox and for the last changed date in the endbox*/
+	--frame: #f0408f;		/*the color of the frames around the content box things*/
+	--accent1: #00b2b2;		/*the first of the accent colors (teal, the bottom stripe on the header)*/
+	--accent2: #fc913a;		/*secongd (orange, middle stripe)*/
+	--accent3: #f5a9b8;		/*third (pink, top stripe)*/
+	--link: #cf0a62;		/*for unvisited links*/
+	--linkvis: #f90c76;		/*for visited links*/
+	--ipatext: #999;		/*for sections of text that show an ipa pronunciation, before hovering*/
+	--ipahover: #555;		/*for sections of text that show an ipa pronunciation, while hovering*/
+	--namelink: #ff385f;	/*for the link on our name :3 */
+	--teal: #077;		/*for the word teal on the about page*/
+	--skybg: #c8f7ffbb;			/*for the background gradient on the sky page*/
+	--cuts: #df789f;		/*for the little cuts on the sky page*/
+	font-size: 17px;		/*the base font size for everything. if we switch over to rem sizes at some point, this should be 1.0625rem*/
+	--tinyfont: 13px;		/*the font size for really small text, like on the peoples page or the "link to the site!" text*/
+/*these are for formatting on the acid page, which has a unique page layout and style*/
+	--bgimgacid: url("/style/acidlight.png"); /*for the bg image on the acid page*/
+	--acidbgdark: #445;	/*the dark tile color for the main section of the board*/
+	--acidbglight: #667;	/*the light tile color for the main section of the board*/
+	--acidmove: #fff;	/*the default text color within the board (used for movement diagram symbols)*/
+	--acidzonedark: #ccd;	/*the dark color section for the zone around the board*/
+	--acidzonelight: #eef;	/*the light color section for the zone around the board*/
+	--acidzonetxt: #888;	/*the color of the rank/file labels for the zones, since they arent intended to really be used*/
+	--acidpiece: #eee;		/*the color of the text used to represent the pieces by default (if needed)*/
+	--aciddark: #e0e;		/*the color of the text used to represent player 1's army*/
+	--acidlight: #0e0;		/*the color of the text used to represent player 2's army*/
+/*these are for the images in the secret link box on the IRIS page. if we make more pages for that add the images for them here plz*/
+	--clckimg: url("/iris/secretbox/clcklight.png"); /*for the link to ingress.html*/
+/*these two are for changing the text highlight colors. we know it's not best practice to change these but we wanted to at least try it*/
+	--selecttxt: #000;		/*the text color when you highlight text (this _is_ pure black so it contrasts more)*/
+	--selectbg: #0cc;		/*the bg color for selections*/
+/*this changes the scrollbar to match the theme, at least in firefox. this is also maybe against best practice but again, we wanted to try it out.*/
+	scrollbar-color: #009292 #eff7f7;
+}
+
+/*this changes the text highlight colors. if this seems like its causing problems them were just gonna comment it out, so if that happens in the future and you see this in here, hi!!*/
+::selection{
+	color: var(--selecttxt);
+	background-color: var(--selectbg);
+}
+
+/*really basic underlying formatting stuff*/
+body{
+	background-color: var(--bgvoid); /*fallback bg color, in case the image isnt loaded*/
+	color: var(--text);
+	font-family: Verdana, sans-serif;
+	margin: 0; /*this gets rid of the default margins that the body tag inherently has*/
+}
+
+/*this class is for basically every standard page on the site*/
+body.main{
+	background-image: var(--bgimg);
+}
+
+/*this adds a transparent text mode for hiding things.*/
+.secret{
+	color: var(--textsecret);
+	text-align: center;
+	/*font size: 14px;*/ /*we dont think there was a specific reason for it to be smaller, but just in case we need to revert this for some reason were leaving this commented out in here*/
+}
+
+/*adds a specific, other text mode for the IRIS page*/
+.irisinvis{
+	color: var(--textsecret);
+}
+
+/*these are the little aesthetic bars for using around the site. bar1 is also the one weve been using for section divisions on some pages*/
+hr.bar1{
+	border: 1px dotted var(--accent1);
+}
+hr.bar2{
+	border: 1px dotted var(--accent2);
+}
+hr.bar3{
+	border: 1px dotted var(--accent3);
+}
+
+/*the container that holds the site header and nav links*/
+div.navi{
+	border: 0px;
+	display: block;
+	margin: auto;
+	min-width: 95%;
+	padding: 1% 3%;
+	margin: 1% auto 0;
+	text-align: center;
+}
+
+/*the left side of the nav div*/
+div.navleft{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 40%;
+	vertical-align: middle;
+}
+
+/*the right side of the nav div*/
+div.navright{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 58%;
+	vertical-align: middle;
+}
+
+/*the main container that holds the bulk of the page content, so the main and note divs can be framed properly*/
+div.vessel{
+	background-color: var(--bg);
+	border: 6px dotted var(--frame);
+	margin: 20px auto;
+	max-width: 1056px; /*this was initially 55%, but we set it to an absolute value so it would fill the viewport in narrow aspect ratios*/
+	padding: 10px;
+	/*align-items: center;*/
+}
+
+/*the specific variant of the main container that's used on the sky page for the background gradient effect*/
+div.skyvessel{
+	background: linear-gradient(var(--bg) 75%, var(--skybg));
+	border: 6px dotted var(--frame);
+	margin: 20px auto;
+	max-width: 1056px;
+	padding: 10px;
+}
+
+/*the container within that that the actual bulk of the page content goes into*/
+div.mainbox{
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 77%;
+	line-height: 1.6;
+}
+
+/*the container that holds footnotes and stuff*/
+div.notebox{
+	float: left;
+	clear: left;
+	box-sizing: border-box;
+	border: 4px dotted var(--accent1);
+	max-width: 21%;
+	vertical-align: top;
+	background-color: var(--bgvoid);
+	font-size: 90%;
+	line-height: 1.3;
+}
+
+/*the container that holds miscelaneous stuff at the bottom of basically every page*/
+div.end{
+	background-color: var(--bg);
+	border: 2px dotted var(--frame);
+	margin: 20px auto;
+	padding: 10px;
+	width: 50%;
+	overflow: auto;
+	text-align: center;
+}
+
+/*the left side of the end div*/
+div.endleft{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 48%;
+	vertical-align: middle;
+	border-right: 2px dotted var(--deco);
+}
+
+/*the right side of the end div*/
+div.endright{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 48%;
+	vertical-align: middle;
+}
+
+/*the div for the 404 page*/
+div.fourohfour{
+	background-color: var(--bg);
+	border: 6px dotted var(--frame);
+	margin: 25% auto 20px;
+	max-width: 30%;
+	padding: 10px;
+}
+
+/*changes the link colors*/
+a:link{
+	color: var(--link);
+}
+a:visited{
+	color: var(--linkvis);
+}
+
+/*styles the footnote reference numbers in the middle of text*/
+a.ref{
+	vertical-align: super;
+	line-height: 1.0;
+	font-size: 80%;
+	color: var(--text);
+	text-decoration: underline dotted var(--linkvis);
+}
+
+/*styles the little link for our name :3 */
+a.name{
+	color: var(--namelink);
+	text-decoration: none;
+}
+
+/*styles links to blend in with regular text*/
+a.secret{
+	color: var(--text);
+	text-decoration: none;
+}
+
+/*the general paragraphed text style*/
+p{
+	margin: 6px 20px 20px;
+	text-indent: 2rem;
+}
+
+/*styles stuff to be centered, intended for lists of links to other pages*/
+p.linklist{
+	margin: 10px 20px 16px;
+	text-align: center;
+}
+
+/*styling for the site logo*/
+.banner{
+	background-image: var(--logoimg);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.sitelogo{
+	max-width: max-content;
+	width: 100%;
+}
+
+/*styling for the style switcher*/
+div.styleswitcher{
+	margin-top:6px;
+}
+
+/*the style switcher label*/
+.stylelabel{
+	color: var(--deco);
+	margin-bottom: 6px;
+}
+
+/*formatting for the navigation links*/
+.navlinks{
+	font-size: 105%;
+	margin-bottom: 6px;
+}
+
+/*formatting for the decorative characters that act as breaks in the navbox and on the links page*/
+.pipe{
+	color: var(--deco);
+	font-size: 80%;
+	font-weight: bold;
+}
+
+/*the page title style*/
+h1{
+	font-size: 25px;
+	text-align: center;
+}
+
+/*styles sub-headings*/
+h2{
+	font-size: 1.17em; /*this is the default size of an <h3> tag, we could theoretically just use that instead but we figured wed try to keep it "standard" or whatev*/
+	text-align: center;
+}
+
+/*styles sub-sub-headings. not used yet (if this changes plz remove this note)*/
+h3{
+	font-size: 1em; /*default size of an <h4> tag. idk why we like these all being smaller than normal but whatev*/
+	text-align: center;
+}
+
+/*styles sub-headings that we think should be italicized (usually because we think its funnier)*/
+h2.italicized{
+	font-size: 1.17em;
+	font-style: italic;
+	text-align: center;
+}
+
+/*containers that hold the diagram + link combos for lists of pages, like on cinnabar gate and other*/
+div.pagelinkbox{
+	display: flex;
+	margin: auto;
+	padding: 0 22%;
+	/*background: var(--bg);*/
+}
+
+/*styles the images that appear next to links on those pages (at least where we've set them to show up)*/
+figure.linkimg{
+	max-width: 126px;
+	padding: 5px;
+	margin: 5px;
+}
+figure.linkimg img{
+	display: block;
+	max-width: 100%;
+	image-rendering: pixelated;
+}
+
+/*styles the link itself so it lines up and looks fancy and everything*/
+a.pagelink{
+	display: block;
+	max-width: 80%;
+	margin: auto;
+	font-size: larger;
+	text-align: center;
+}
+
+/*styles the bits of text we have under each link entry as a description (specifically made for the project page)*/
+p.linkdesc{
+  max-width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-indent: 0;
+}
+
+/*styles the iframe that holds the buttons in the footer*/
+iframe.buttonhorde{
+	border: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	min-height: 230px; /*not sure if there might be a way to do this that isnt just hardcoding it but this seems like it works for now?*/
+}
+
+/*container for tables and flag images and the secret link box to center align them on the page*/
+div.centerbox{
+	text-align: center;
+}
+
+/*handles swapping out the individual button-like images for the secret links, in the same way the site logo image does (it's so the images can more consistently be hard to see between themes*/
+.clck{
+	background-image: var(--clckimg);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+/*if we add others, plz specify them here :3*/
+
+/*adds a specific secret link style that blends in with the "last updated" text bcuz yknow, we like gettin silly with it and sneaking things in in every little nook and cranny we can.*/
+a.sumi{
+	color: var(--deco);
+	text-decoration: none;
+}
+
+/*styles tables for stuff like the suboptimal numbers or the p2tt chart*/
+table.maintable{
+	border-collapse: collapse;
+	border: 4px solid var(--frame);
+	display: inline-table;
+	margin: 0 10px 10px;
+	text-align: center;
+}
+table.maintable th, table.maintable td{
+	border-collapse: collapse;
+	height: 50px;
+	min-width: 40px;
+}
+table.maintable td{
+	border: 2px solid var(--frame);
+	padding: 2px 8px;
+}
+
+/*styles the table for the keyboard layout*/
+table.keyboard{
+	border-collapse: collapse;
+	display: inline-table;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+table.keyboard th, table.keyboard td{
+	border: 0;
+	height: 60px;
+	min-width: 40px;
+	padding: 8px 17px;
+}
+table.keyboard th{
+	padding: 17px;
+}
+table.keyboard td{
+	border-bottom: 1px solid var(--frame);
+}
+table.keyboard tr:last-child td{
+	border: 0px;
+}
+
+/*gives the last row in a subsection of the keyboard layout table a thicker line to delineate subsections*/
+tr.subline td{
+	border-bottom: 2px solid var(--accent1);
+}
+
+/*formats the larger images of flags on the flag page (and also the style previews on the style page shhh)*/
+img.flag{
+	padding: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*formats the smaller flags on the flag page*/
+img.subflag{
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*formats the svg dl links on the flag page*/
+p.svglink{
+	font-size: 110%;
+	text-indent: 0;
+}
+
+/*right-aligns table cells, like in the suboptimal page for the powers of 10*/
+td.rcell{
+	text-align: right;
+}
+
+/*makes unordered lists two columns so they dont take up too much vertical space*/
+ul.twocol{
+	columns: 2;
+}
+
+/*the container for collections of buttons in the main page body (like in the button pages)*/
+div.buttonbox{
+	text-align: center;
+	image-rendering: pixelated;
+}
+
+/*styles text that shows an ipa pronunciation (since we tend to have a hard time parsing blocks of text that have a bunch of pronunciation guides in them without any differentiation*/
+.ipa{
+	color: var(--ipatext);
+	font-family: monospace;
+}
+.ipa:hover{
+	color: var(--ipahover);
+}
+
+/*styles small subheader text, like on the peoples page or the "link to the site!" text*/
+.tiny{
+	font-size: var(--tinyfont);
+	text-indent: 0;
+}
+
+/*styles the word teal on the about page*/
+.teal{
+	color: var(--teal);
+}
+
+/*styles the fun fact list on the about page*/
+ul.facts{
+	width: 77%;
+	margin: auto;
+	list-style-type: "\2765 \20";
+}
+
+/*styles the character info bullet points on the character page*/
+ul.bio{
+	list-style-type: "\2766 \20";
+}
+
+/*styles the cohost webring embed*/
+.cohost{
+  margin: auto;
+  text-align: center;
+  width: 350px;
+}
+
+/*styles the links to other sites on the links page. if we wanna add more lines to the links in the future we gotta keep in mind that were using nth-of-type selectors*/
+ul.linklist{
+	list-style: none;
+	text-align: left;
+}
+ul.linklist li:nth-of-type(odd){
+	font-size: 110%;
+	text-indent: 34px;
+	min-height: 35px;
+}
+ul.linklist li:nth-of-type(odd) a{
+	vertical-align: 40%;
+}
+ul.linklist li:nth-of-type(even){
+	font-size: 90%;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+/*styles the decorative cuts on the sky page*/
+hr.cuts{
+	border: 1px solid var(--cuts);
+	margin: 9px -10px 8px;
+}
+
+/*the note section header*/
+.notetitle{
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 18px;
+}
+
+/*formatting for footnotes in the notebox*/
+aside{
+	margin: 6px 12px 20px;
+}
+
+/*adds a footnote number to the asides based on the footnote number specified in the html*/
+aside::before{
+	content: attr(itemid) " - ";
+}
+
+/*the text that shows the path of the current page*/
+.path a{
+	color: var(--text);
+	text-decoration: none;
+}
+
+/*the text that shows the last changed date*/
+.time{
+	color: var(--deco);
+	font-size: 80%;
+	font-style: italic;
+	text-indent: 0;
+	margin-bottom: 8px;
+}
+
+
+/*this big section down here is for styling stuff on the acid page, which has a unique page style to itself. it felt like it made more sense to have it all together down here so we don't have to constantly look for bits later.*/
+
+/*sets the page background*/
+body.acid{
+	background-image: var(--bgimgacid);
+}
+
+/*the big box that holds the actual page content, like on the other pages*/
+div.acidvessel{
+	background-color: var(--bg);
+	margin: 20px auto;
+	max-width: 1056px;
+	padding: 10px;
+}
+
+/*the box with the buttons and stuff at the bottom (the main difference here is the lack of a border)*/
+div.acidend{
+	background-color: var(--bg);
+	margin: 20px auto;
+	padding: 10px;
+	width: 50%;
+	overflow: auto;
+	text-align: center;
+}
+
+/*the singular aesthetic bar that separates the header from the rest of the page content*/
+hr.acidheadbar{
+	border: 2px dotted var(--deco);
+}
+
+/*adds a silly gradient to the name acid (we originally had this on every instance of the game's name in a lil test page we did. prob not gonna do that here but uhm, whatevz)*/
+.acidgrad{
+	background: linear-gradient(#f0f, #0f0); /*these are hardcoded since we aren't anticipating changing these style to style, if we change that then this needs to be fixed*/
+	background-clip: text;
+	color:transparent;
+}
+
+/*styles the h2 element with our names at the top of the page*/
+h2.aciddime{
+	font-size: 90%;
+	font-style: italic;
+}
+
+/*styles the names for MAGI and LINE*/
+.magenta{
+	color: var(--aciddark);
+}
+.lime{
+	color: var(--acidlight);
+}
+
+/*these next few are specifically styling for the chessboards on the acid page. god help us all*/
+/*the framing background color, border, and positioning for the board as a whole, plus stuff to collapse the cell borders so the board looks cleaner*/
+table.acid{
+	background-color: var(--bgvoid);
+	border: 2px solid var(--acidbglight);
+	border-spacing: 0px;
+	color: var(--acidmove);
+	margin: 8px auto 17px;
+}
+/*styling for the rank/file labels*/
+table.acid th{
+	padding: 4px;
+	color: var(--text);
+}
+/*styling for the colors of the two different armies on the board*/
+td.p1{
+	color: var(--aciddark);
+}
+td.p2{
+	color: var(--acidlight);
+}
+/*styling for the individual cells of the board, minus the actual checkerboard coloring (which is handled in the next block of code)*/
+table.acid td{
+	min-width: 32px;
+	height: 34px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*colors the individual cells that have pieces in them*/
+table.acid td.m{
+	color: var(--aciddark);
+}
+table.acid td.l{
+	color: var(--acidlight);
+}
+/*selectors to get the checkerboard pattern and zone shading in place for the board. if theres a better way to do this please tell us bc holy hell this is bulky*/
+/*the light cells within the zone (matching the corners)*/
+table.acid tr:nth-child(2) > td:nth-child(even), table.acid tr:nth-child(12) > td:nth-child(even), table.acid tr:nth-child(even):nth-child(n+3):nth-child(-n+11) > td:nth-child(2), table.acid tr:nth-child(even):nth-child(n+3):nth-child(-n+11) > td:nth-child(12){
+	background-color: var(--acidzonelight);
+}
+/*the dark cells within the zone*/
+table.acid tr:nth-child(2) > td:nth-child(odd), table.acid tr:nth-child(12) > td:nth-child(odd), table.acid tr:nth-child(odd):nth-child(n+3):nth-child(-n+11) > td:nth-child(2), table.acid tr:nth-child(odd):nth-child(n+3):nth-child(-n+11) > td:nth-child(12){
+	background-color: var(--acidzonedark);
+}
+/*the light cells in the main board (also matching the corners)*/
+table.acid tr:nth-child(even):nth-child(n+3):nth-child(-n+11) > td:nth-child(even):nth-child(n+3):nth-child(-n+11), table.acid tr:nth-child(odd):nth-child(n+3):nth-child(-n+11) > td:nth-child(odd):nth-child(n+3):nth-child(-n+11){
+	background-color: var(--acidbglight);
+}
+/*the dark cells in the main board*/
+table.acid tr:nth-child(even):nth-child(n+3):nth-child(-n+11) > td:nth-child(odd):nth-child(n+3):nth-child(-n+11), table.acid tr:nth-child(odd):nth-child(n+3):nth-child(-n+11) > td:nth-child(even):nth-child(n+3):nth-child(-n+11){
+	background-color: var(--acidbgdark);
+}
+/*the darker text color for the rank/file labels on the zone*/
+table.acid tr:nth-child(1) > th:nth-child(2), table.acid tr:nth-child(1) > th:nth-child(12), tr:nth-child(13) > th:nth-child(2), table.acid tr:nth-child(13) > th:nth-child(12), table.acid tr:nth-child(2) > th:nth-child(1), table.acid tr:nth-child(2) > th:nth-child(13), table.acid tr:nth-child(12) > th:nth-child(1), table.acid tr:nth-child(12) > th:nth-child(13){
+	color: var(--acidzonetxt);
+}
+/*ok holy fuck thats over v.v*/

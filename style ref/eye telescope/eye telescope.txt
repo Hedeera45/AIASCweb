@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head profile="http://www.w3.org/2005/10/profile">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="Eye to the Telescope, SFPA, Science Fiction & Fantasy Poetry Association sf science-fiction speculative fantasy horror poetry poet poem verse" />
+<meta name="description" content="Eye to the Telescope, the quarterly online journal of SFPA, the Science Fiction & Fantasy Poetry Association, an international organization of speculative poets." />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Eye to the Telescope</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="img/favicon.ico" rel="icon" type="image/ico" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+#sideleft { width: 120px; }
+#sideright { width: 120px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+#sideleft, #sideright1 { padding-top: 30px; }
+#main { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div style="display:none;">
+   <img src="/img/bg.jpg" alt="background stars" width="200" height="200" border="0" />
+   <img src="/img/container.gif" alt="background text" width="800" height="1" border="0" />
+   <img src="/img/header.jpg" alt="eye to the telescope" width="800" height="110" border="0" />
+   <img src="/img/footer.jpg" alt="tour of alternate worlds" width="800" height="110" border="0" />
+   <img src="/img/clear.gif" alt="spacer" border="0" />
+</div>
+<div id="container">
+  <div id="header">
+    <img src="img/newheader.jpg" alt="eye to the telescope" width="800" height="110" border="0" />
+  <!-- end #header --></div>
+  <div id="sideleft">
+  	<div class="menu">
+      <a href="index.html">Current Issue</a><br />
+      <a href="about.html">About</a><br />
+      <a href="archives.html">Archives</a><br />
+      <a href="contribs.html">Contributors</a><br />
+      <a href="masthead.html">Masthead</a><br />
+      <a href="submit.html">Guidelines</a><br />
+      <a href="news.html">News</a><br />
+      <a href="http://sfpoetry.com/" target="_blank">SFPA</a>
+    </div>
+    <p>&nbsp;</p>
+    <p align="center" class="small"><a href="mailto:sfpaweb@sfpoetry.com"><em>Webmaster</em></a></p>
+  </div>
+  <div id="sideright">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="YJRZDPHCSSE22" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    <span class="smallgr">Help SFPA, a non-profit entity, expand its goals in promoting the speculative poetry community!
+  <!-- end #sidebar2 -->
+  <!-- InstanceBeginEditable name="rightcol" -->rightcol<!-- InstanceEndEditable --></span>
+    <p class="smallgr"><img src="img/sfwa.png" width="90" height="102" alt=""/><br />
+    Eye to the Telescope and SFPA are grateful for support from SFWA.</p>
+  </div>
+  <div id="main"><!-- InstanceBeginEditable name="centercol" -->
+  <div class="textbox">      
+    <div align="center"><span class="page">A Brief Explication</span>
+    </div>
+    <p><em>Eye to the Telescope,</em> a quarterly online
+            journal, began publishing science-fiction, fantasy, horror, and other
+            speculative poetry in 2011, under the auspices of the <a href="http://sfpoetry.com/">Science
+    Fiction &amp; Fantasy Poetry Association</a>. Its editors are selected by the current SFPA
+    president and change with each issue; as a result, editorial policies
+    change with each issue as well.</p>
+      <p>Read our <a href="index.html">current issue</a> of  poems set in other
+        worlds—some, as strange as this one. Peruse the labyrinthine <a href="archives.html">archives</a>        that
+        shall form as our chronology accretes. When appropriate, <a href="submit.html">submit</a> your
+        own genre poetry for the delectation of our editors, and—with their approval—our
+        readership. See our <a href="https://sfpoetry.com/events.html" target="_blank">Events</a> calendar for submissions windows.</p>
+      <p>Interested in editing an issue of <em>Eye to the Telescope</em>? See the <a href="editettt.html">Editors’ Guidelines</a> for information and requirements.</p>
+      <p align="center"><strong><em>Forthcoming issues, editors, and themes:</em></strong></p>
+      <p>#60, May 2026, Paying Tribute (Angela Acosta)</p>
+  <p>#61, August 2026, Aliens (D. A. Xiaolin Spires)</p>
+  <p>#62, November 2026, Faeries (Silvatiicus Riddle)</p>
+  <p>#63, February 2027, Borders (L. Acadia)</p>
+  <p>#64, May 2027, Memory (Ian Li)</p>
+  <p>#65, August 2027, Cryptids (Jacob Bergstresser)</p>
+  <p>#66, November 2027, Redemption (Ennis Rook Bashe)</p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <!-- end #mainContent --></div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  <div id="footer">
+    <img src="img/footer.jpg" alt="tour of alternate worlds" width="800" height="110" border="0" />
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+<!-- InstanceEnd --></html>
