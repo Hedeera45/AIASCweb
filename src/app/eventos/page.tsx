@@ -9,7 +9,7 @@ export default function EventosPage() {
       <div className="section-row">Evento 3</div>
 
       {/* Cursos corrientes */}
-      <div className="cursos-header">Cursos corrientes</div>
+      <div className="subheader">Cursos corrientes</div>
       <div className="section-row">Curso 1</div>
       <div className="section-row">Curso 2</div>
       <div className="section-row">Curso 3</div>

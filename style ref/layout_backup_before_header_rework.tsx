@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-main",
 });
@@ -20,18 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={sourceSans.variable}>
+    <html lang="es" className={`${outfit.variable} ${jakarta.variable}`}>
       <body>
         <div className="container">
           {/* ---- HEADER ---- */}
+          <div className="top-white-band" />
           <header className="header-grid">
-            <div className="logo-area">
-              <img src="/logo.png" alt="AIASC Logo" />
-            </div>
+            <div className="logo-area">AIASC LOGO</div>
             <div className="cover-area">
-              <img src="/cover3b.png" alt="AIASC - Evento en campo" />
+              <img src="/cover.png" alt="AIASC - Evento en campo" />
             </div>
-            <div className="nav-spacer" />
             <nav className="nav-bar">
               <ul className="nav-links">
                 <li>
@@ -41,10 +44,10 @@ export default function RootLayout({
                   <Link href="/publicaciones">Publicaciones</Link>
                 </li>
                 <li>
-                  <Link href="/sobre">Organización</Link>
+                  <Link href="/sobre">Sobre la AIASC</Link>
                 </li>
                 <li>
-                  <Link href="/historia">Historia</Link>
+                  <Link href="/historia">Historia de la AIASC</Link>
                 </li>
                 <li>
                   <Link href="/contacto">Contacto</Link>

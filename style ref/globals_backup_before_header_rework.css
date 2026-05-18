@@ -8,10 +8,10 @@
   --color-white: #ffffff;
   --color-text: #1a1a1a;
   --color-hr: #2e7d32;
-  --color-cursos-bg: #dbf8e5;
+  --color-cursos-bg: #e8f5e9;
 
-  --font-main: 'Source Sans 3', sans-serif;
-  --font-heading: 'Source Sans 3', sans-serif;
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
 }
 
 * {
@@ -40,67 +40,64 @@ a:hover {
 }
 
 .container {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 80px;
+  padding: 20px;
 }
 
-/* (top-white-band removed — header is now white) */
+/* ========================================
+   WHITE BAND ABOVE HEADER
+   ======================================== */
+.top-white-band {
+  height: 18px;
+  background: var(--color-white);
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
 
 /* ========================================
    HEADER GRID
    ======================================== */
 .header-grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: auto auto;
-  gap: 0;
+  gap: 16px 32px;
   margin-bottom: 0;
-  background-color: var(--color-white);
-  border: 1px solid #ddd;
-  border-radius: 4px 4px 0 0;
-  overflow: hidden;
+  background-color: var(--color-header-bg);
+  padding: 18px;
+  border-radius: 0;
 }
 
 .logo-area {
-  grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / span 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
-  background: var(--color-white);
-  padding: 24px; /* Give it a little breathing room inside the cell */
-}
-
-.logo-area img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Ensures the logo retains its correct aspect ratio */
-  display: block;
-}
-
-/* ========================================
-   GREEN SPACER (bottom-left cell)
-   ======================================== */
-.nav-spacer {
-  grid-column: 1;
-  grid-row: 2;
-  background-color: var(--color-header-bg);
+  border: 2px dashed #fff;
+  height: 180px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-dark-green);
+  background: #fff;
+  border-radius: 3px;
 }
 
 .cover-area {
   grid-column: 2;
   grid-row: 1;
-  height: 250px;
+  height: 130px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
   overflow: hidden;
-  padding: 12px 12px 12px 0;
+  border-radius: 3px;
 }
 
 .cover-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
   display: block;
 }
 
@@ -110,12 +107,11 @@ a:hover {
 .nav-bar {
   grid-column: 2;
   grid-row: 2;
-  background-color: var(--color-header-bg);
+  background-color: rgba(0, 0, 0, 0.15);
   height: 44px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  container-type: inline-size;
+  border-radius: 3px;
 }
 
 .nav-links {
@@ -124,58 +120,30 @@ a:hover {
   padding: 0;
   width: 100%;
   height: 100%;
-  margin-right: 0;
-  gap: 35px;
-}
-
-.nav-links::before {
-  content: '';
-  flex: 1; /* Adjust this value (e.g. 1.5, 2, 3) to push them more or less */
-  min-width: 0; /* Let it collapse to 0px on small screens */
-}
-
-@container (min-width: 1223px) {
-  .nav-links {
-    max-width: 1015px;
-    margin-right: 20px;
-  }
-  
-  .nav-links::before {
-    display: none; /* Hide the spacer when zoomed out */
-  }
-}
-
-@container (min-width: 1560px) {
-  .nav-links {
-    margin-right: 80px; /* Upgrade to 80px gap on wider containers */
-  }
-}
-
-@container (min-width: 4030px) {
-  .nav-links {
-    margin-right: 200px; /* Upgrade to 200px gap on extremely wide containers */
-  }
 }
 
 .nav-links li {
-  flex: 0 1 175px;   /* Capped at 175px preferred, but allowed to shrink safely */
-  max-width: 175px;
-  width: 100%;
-  height: 100%;      /* Ensure list items occupy the full height of the bar */
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li:last-child {
+  border-right: none;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 15px;
+  font-size: 12px;
   padding: 0 8px;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Guarantee horizontal centering if text wraps to 2 lines */
-  line-height: 1;    /* Strips inherited body line-height to ensure absolute pixel-perfect vertical centering */
   font-weight: 500;
   transition: background 0.25s;
   letter-spacing: 0.02em;
@@ -195,7 +163,7 @@ a:hover {
    PAGE CONTENT AREA
    ======================================== */
 .page-content {
-  padding: 36px 0 60px; /* Flush side alignment with logo boundaries */
+  padding: 36px 20px 60px;
 }
 
 /* ========================================
@@ -215,8 +183,8 @@ hr.green-rule {
 .page-title {
   font-family: var(--font-heading);
   font-size: 2rem;
-  font-weight: 600;
-  color: var(--color-dark-green); /* Match the gorgeous green theme of homepage headers like Novedades */
+  font-weight: 700;
+  color: var(--color-text);
   margin-bottom: 6px;
 }
 
@@ -229,31 +197,19 @@ hr.green-rule {
   line-height: 1.7;
 }
 
+/* ========================================
+   SECTION BLOCKS (Novedades, Eventos)
+   ======================================== */
 .section-block {
   margin-bottom: 48px;
 }
 
-.section-block > *:not(h2):not(.subheader) {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .section-block h2 {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--color-dark-green);
-  border: 3px solid var(--color-dark-green); /* Bolder, thicker premium border box */
-  padding: 12px 16px;
-  margin-bottom: 16px; /* Reverted back to 16px */
-  border-radius: 3px;
-  background: var(--color-white);
-  display: block;
-  width: 100%;
-}
-
-.section-block hr.green-rule {
-  display: none; /* Hide the green line since we are using the beautiful square box instead */
+  margin-bottom: 4px;
 }
 
 .section-row {
@@ -279,29 +235,19 @@ hr.green-rule {
 }
 
 /* ========================================
-   SUBHEADER
+   CURSOS CORRIENTES SUBHEADER
    ======================================== */
-.subheader {
+.cursos-header {
   background: var(--color-cursos-bg);
   padding: 10px 14px;
-  margin-top: 20px; /* Kept at 20px for beautiful, spacious breathing room */
+  margin-top: 20px;
   margin-bottom: 2px;
-  margin-left: -14px;  /* Shift the background box left so text aligns perfectly flush with title and list */
-  margin-right: -14px; /* Balance the right side bleed */
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--color-dark-green);
+  border-left: 4px solid var(--color-header-bg);
   border-radius: 2px;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--color-dark-green);
-  text-underline-offset: 5px; /* Offset so the wave sits cleanly below letters */
-}
-
-.section-block .subheader {
-  margin-left: 0;
-  margin-right: 0; /* Keep the subheader perfectly flush on the homepage */
 }
 
 /* ========================================
@@ -492,19 +438,13 @@ hr.green-rule {
 
   .logo-area {
     grid-row: auto;
-    grid-column: 1;
     height: 90px;
   }
 
   .cover-area {
     grid-column: 1;
-    grid-row: auto;
     height: 100px;
-    padding: 0 12px;
-  }
-
-  .nav-spacer {
-    display: none;
+    font-size: 1.2rem;
   }
 
   .nav-bar {
