@@ -111,7 +111,7 @@ a:hover {
   grid-column: 2;
   grid-row: 2;
   background-color: var(--color-header-bg);
-  min-height: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -123,7 +123,7 @@ a:hover {
   list-style: none;
   padding: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-right: 0;
   gap: 35px;
 }
@@ -161,7 +161,7 @@ a:hover {
   flex: 0 1 175px;   /* Capped at 175px preferred, but allowed to shrink safely */
   max-width: 175px;
   width: 100%;
-  height: 44px;      /* Ensure list items have a fixed height of 44px */
+  height: 100%;      /* Ensure list items occupy the full height of the bar */
 }
 
 .nav-links a {
@@ -538,37 +538,5 @@ hr.green-rule {
 
   .pub-detail-header {
     flex-direction: column;
-  }
-}
-
-/* ========================================
-   CONTAINER QUERY FOR ZOOMED IN / SMALL VIEWS (nav-links <= 478px)
-   ======================================== */
-@container (max-width: 478px) {
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 0;
-  }
-  
-  .nav-links::before {
-    display: none;
-  }
-  
-  .nav-links li {
-    height: 44px;
-    max-width: none;
-  }
-  
-  .nav-links li:nth-child(-n+3) {
-    flex: 0 0 33.333%;
-  }
-  
-  .nav-links li:nth-child(n+4) {
-    flex: 0 0 50%;
-  }
-  
-  .nav-links a {
-    font-size: 13px;
-    padding: 0 4px;
   }
 }
