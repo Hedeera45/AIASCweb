@@ -542,26 +542,7 @@ hr.green-rule {
 }
 
 /* ========================================
-   CONTAINER QUERY FOR ZOOMED IN / MEDIUM VIEWS
-   ======================================== */
-@container (max-width: 768px) {
-  .nav-links {
-    gap: 12px;
-  }
-  
-  .nav-links li {
-    flex: 0 1 120px;
-    max-width: 120px;
-  }
-  
-  .nav-links a {
-    font-size: 13px;
-    padding: 0 6px;
-  }
-}
-
-/* ========================================
-   CONTAINER QUERY FOR SMALL/MOBILE VIEWS
+   CONTAINER QUERY FOR ZOOMED IN / SMALL VIEWS (nav-links <= 478px)
    ======================================== */
 @container (max-width: 478px) {
   .nav-links {
