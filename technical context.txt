@@ -1,0 +1,67 @@
+========================================================================
+AIASC NAVIGATION BAR RESPONSIVENESS ARCHITECTURE
+========================================================================
+
+1. OVERVIEW & PROBLEM STATEMENT
+------------------------------------------------------------------------
+During high-DPI desktop zooming (e.g., 110% - 120%), the logical CSS width of the navigation container (.nav-bar) drops from desktop sizes down to a range of 700px - 815px. 
+
+Under the previous design:
+* All 5 buttons ("Inicio", "Publicaciones", "Organización", "Historia", "Contacto") were forced onto a single line.
+* A large fixed gap of 35px, combined with 175px maximum button widths, caused the items to run out of physical space, squishing the text and causing the "Contacto" button to warp, wrap awkwardly, or collide with outer container boundaries.
+* The 3-2 grid layout only triggered below 478px container width, leaving a massive gap of cramping in the medium range.
+
+To achieve flawless, smooth, and high-performance zooming, we implemented a three-tier layout architecture.
+
+
+2. PERFORMANCE CONSTRAINTS & SOLUTION
+------------------------------------------------------------------------
+To prevent performance degradation (layout thrashing, frame drops) on lower-end devices or high-zoom levels, dynamic layout calculations (e.g., CSS clamp(), calc()) were avoided. 
+
+Instead, we leveraged hardware-accelerated static CSS flexbox properties. The layout now shifts dynamically across three distinct tiers based on the width of the navigation container using CSS Container Queries (@container).
+
+
+3. THREE-TIER RESPONSIVE SIZING MATRIX
+------------------------------------------------------------------------
+
+TIER 1: DESKTOP LAYOUT (Container Width > 768px)
+* Layout: Single-row grouped on the right.
+* Gap: 35px
+* Button Width Limit: flex: 0 1 175px; max-width: 175px;
+* Typography: font-size: 15px; padding: 0 8px; (Premium desktop styling)
+* Spacer Behavior: .nav-links::before { flex: 1 } is active, pushing the navigation flush to the right boundary.
+
+TIER 2: COMPACT / MEDIUM ZOOM LAYOUT (Container Width: 479px - 768px)
+* Layout: Single-row grouped on the right.
+* Gap: 12px (Static, zero-cost gap)
+* Button Width Limit: flex: 0 1 120px; max-width: 120px;
+* Typography: font-size: 13px; padding: 0 6px; (High-readability, compact margins)
+* Spacer Behavior: .nav-links::before { flex: 1 } is active, gracefully collapsing from 371px down to 83px to absorb shrinking width.
+* Pixel Math Verification (at the absolute tightest limit of 479px):
+  - "Inicio" (Text width ~35px + 12px padding)         = 47px
+  - "Publicaciones" (Text width ~78px + 12px padding)  = 90px
+  - "Organización" (Text width ~73px + 12px padding)   = 85px
+  - "Historia" (Text width ~46px + 12px padding)       = 58px
+  - "Contacto" (Text width ~56px + 12px padding)       = 68px
+  - Total Buttons Width                                = 348px
+  - Gaps (4 gaps * 12px spacing)                       = 48px
+  - GRAND TOTAL OCCUPIED WIDTH                         = 396px
+  - Safety Buffer at 479px container width: 479px - 396px = 83px (Guarantees zero wrapping or cramping)
+
+TIER 3: MOBILE GRID LAYOUT (Container Width <= 478px)
+* Layout: Multi-row, beautifully balanced 3-2 grid layout.
+* Gap: 0px (flex-wrap: wrap)
+* Row 1 (First 3 buttons): flex: 0 0 33.333% (Inicio, Publicaciones, Organización)
+* Row 2 (Remaining 2 buttons): flex: 0 0 50% (Historia, Contacto)
+* Typography: font-size: 13px; padding: 0 4px;
+* Spacer Behavior: .nav-links::before { display: none } (Spacer disabled to facilitate grid flow)
+
+
+4. CSS IMPLEMENTATION REF
+------------------------------------------------------------------------
+All styling rules are located at the end of the main stylesheet:
+[globals.css](file:///c:/Docs/Uni/Extra%20uni/aiasc_page/src/app/globals.css)
+
+Original stylesheet backed up to:
+[globals_backup_before_cramp_fix.css](file:///c:/Docs/Uni/Extra%20uni/aiasc_page/style%20ref/globals_backup_before_cramp_fix.css)
+========================================================================

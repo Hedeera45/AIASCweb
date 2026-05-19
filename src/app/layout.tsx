@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "AIASC - Asociación de Ingenieros Agrónomos del Sur de Córdoba",
   description:
     "Sitio oficial de la Asociación de Ingenieros Agrónomos del Sur de Córdoba.",
+};
+
+export const viewport: Viewport = {
+  width: 1200,
+  initialScale: 0.8,
 };
 
 export default function RootLayout({
