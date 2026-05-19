@@ -67,7 +67,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 226px; /* 250px - 24px margins */
-  margin: 12px 12px 12px 12px; /* Match the top/bottom spacing of the cover image, and add left/right symmetry */
+  margin: 12px 12px 12px 0; /* Touch left edge, keep gap on right */
   background: var(--color-white);
   padding: 24px; /* Give it a little breathing room inside the cell */
   border: 1px solid #ddd;
@@ -94,7 +94,7 @@ a:hover {
   grid-row: 1;
   height: 250px;
   overflow: hidden;
-  padding: 12px 12px 12px 0;
+  padding: 12px 0 12px 0;
 }
 
 .cover-area img {
