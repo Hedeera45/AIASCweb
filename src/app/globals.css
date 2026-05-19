@@ -56,7 +56,6 @@ a:hover {
   gap: 0;
   margin-bottom: 0;
   background-color: var(--color-white);
-  border: 1px solid #ddd;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
 }
@@ -67,9 +66,11 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  height: 226px; /* 250px - 24px margins */
+  margin: 12px 12px 12px 12px; /* Match the top/bottom spacing of the cover image, and add left/right symmetry */
   background: var(--color-white);
   padding: 24px; /* Give it a little breathing room inside the cell */
+  border: 1px solid #ddd;
 }
 
 .logo-area img {
