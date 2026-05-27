@@ -521,6 +521,10 @@ hr.green-rule {
    RESPONSIVE
    ======================================== */
 @media (max-width: 800px) {
+  .container {
+    padding: 10px 15px;
+  }
+
   .header-grid {
     grid-template-columns: 1fr;
   }

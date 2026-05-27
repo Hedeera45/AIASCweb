@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     "Sitio oficial de la Asociación de Ingenieros Agrónomos del Sur de Córdoba.",
 };
 
-export const viewport: Viewport = {
-  width: 1200,
-  initialScale: 0.8,
-};
+// export const viewport: Viewport = {
+//   width: 1200,
+//   initialScale: 0.8,
+// };
 
 export default function RootLayout({
   children,
