@@ -540,7 +540,7 @@ hr.green-rule {
     grid-column: 1;
     grid-row: auto;
     height: 100px;
-    padding: 0;
+    padding: 0 12px;
   }
 
   .nav-spacer {
