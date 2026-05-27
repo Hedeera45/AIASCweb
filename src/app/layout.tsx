@@ -31,7 +31,10 @@ export default function RootLayout({
           {/* ---- HEADER ---- */}
           <header className="header-grid">
             <div className="logo-area">
-              <img src="/logo.png" alt="AIASC Logo" />
+              <picture>
+                <source srcSet="/logo-mobile.png" media="(max-width: 800px)" />
+                <img src="/logo.png" alt="AIASC Logo" />
+              </picture>
             </div>
             <div className="cover-area">
               <img src="/cover3b.png" alt="AIASC - Evento en campo" />
