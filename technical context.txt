@@ -64,4 +64,16 @@ All styling rules are located at the end of the main stylesheet:
 
 Original stylesheet backed up to:
 [globals_backup_before_cramp_fix.css](file:///c:/Docs/Uni/Extra%20uni/aiasc_page/style%20ref/globals_backup_before_cramp_fix.css)
+
+5. RECENT UPDATE: ABANDONING CONTAINER QUERIES FOR NAVBAR
+------------------------------------------------------------------------
+The container query (@container) approach described in Section 3 failed during intermediate desktop zoom levels (133% - 150%). 
+Because the navbar is restricted to a grid column on desktop, its container width shrinks independently of the viewport width. This caused the layout rules to fight each other, resulting in a "jumping" navbar that wrapped prematurely.
+
+Solution implemented:
+We removed the competing @container queries and narrow @media queries.
+The layout is now controlled by a single viewport-based breakpoint: @media (max-width: 950px).
+- Viewport > 950px: Single row layout (handles 100% - 133% zoom).
+- Viewport <= 950px: 3+2 wrapped layout (handles 150%+ zoom and mobile viewports).
+This completely eliminates the conflicting behaviors and provides a clean, predictable transition.
 ========================================================================

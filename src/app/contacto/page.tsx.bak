@@ -7,60 +7,19 @@ export default function ContactoPage() {
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  async function handleSubmit(e: FormEvent) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/aiascriocuarto@gmail.com", {
-        method: "POST",
-        headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            Nombre: nombre,
-            Email: email,
-            Mensaje: mensaje
-        })
-      });
-
-      if (response.ok) {
-        alert("Mensaje enviado");
-        setNombre("");
-        setEmail("");
-        setMensaje("");
-      } else {
-        alert("Hubo un error al enviar el mensaje. Por favor intente nuevamente.");
-      }
-    } catch (error) {
-      alert("Hubo un error de conexión. Por favor intente nuevamente.");
-    }
+    // TODO: wire up to a backend/API
+    alert("Mensaje enviado. ¡Gracias por contactarnos!");
+    setNombre("");
+    setEmail("");
+    setMensaje("");
   }
 
   return (
     <>
       <h1 className="page-title">Contacto</h1>
       <hr className="green-rule" />
-
-      {/* Side-by-side Row for Address and Map */}
-      <div className="contact-details-row">
-        {/* Address & Phone Details */}
-        <div className="contact-info">
-          <div>Alberdi 1354 - Rio IV, Cba</div>
-          <div>351 7 553 101</div>
-        </div>
-
-        {/* Integrated OpenStreetMap */}
-        <div className="map-container">
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-64.3540%2C-33.1330%2C-64.3440%2C-33.1250&amp;layer=mapnik&amp;marker=-33.12932%2C-64.34857"
-            title="Ubicación de la Asociación"
-          ></iframe>
-        </div>
-      </div>
-
-      {/* Section Title for Form */}
-      <h2 className="form-subtitle">Deje un mensaje:</h2>
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">

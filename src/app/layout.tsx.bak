@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Source_Sans_3 } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
-import Navbar from "./Navbar";
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -40,7 +40,25 @@ export default function RootLayout({
               <img src="/cover3b.png" alt="AIASC - Evento en campo" />
             </div>
             <div className="nav-spacer" />
-            <Navbar />
+            <nav className="nav-bar">
+              <ul className="nav-links">
+                <li>
+                  <Link href="/">Inicio</Link>
+                </li>
+                <li>
+                  <Link href="/publicaciones">Publicaciones</Link>
+                </li>
+                <li>
+                  <Link href="/sobre">Organización</Link>
+                </li>
+                <li>
+                  <Link href="/historia">Historia</Link>
+                </li>
+                <li>
+                  <Link href="/contacto">Contacto</Link>
+                </li>
+              </ul>
+            </nav>
           </header>
 
           {/* ---- PAGE CONTENT ---- */}
