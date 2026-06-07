@@ -76,4 +76,31 @@ The layout is now controlled by a single viewport-based breakpoint: @media (max-
 - Viewport > 950px: Single row layout (handles 100% - 133% zoom).
 - Viewport <= 950px: 3+2 wrapped layout (handles 150%+ zoom and mobile viewports).
 This completely eliminates the conflicting behaviors and provides a clean, predictable transition.
+
+6. LOGO SCALING AND RESPONSIVE BEHAVIOR
+------------------------------------------------------------------------
+In mobile layout (@media (max-width: 800px)) or at very high zoom levels (170%+), the logo container (.logo-area) spans the full viewport width. 
+
+Previous issue: The container had a fixed height of 90px, but the image scaled horizontally to 100% of the screen width. This inflated the logo's intrinsic height to ~200px-300px, resulting in severe bottom-cropping because the container was locked at 90px with overflow hidden.
+
+Solution implemented:
+1. Dynamic Container Height: Removed the fixed `height: 90px` on `.logo-area` for mobile and replaced it with `height: auto`. This allows the container to dynamically stretch and perfectly wrap the logo as it expands horizontally.
+2. Picture Tag Constraint: Added `height: 100%` and flex centering to `.logo-area picture` to prevent a cyclic height-expansion loop that occurs when both the picture tag and the image have `height: auto`.
+3. Object-Fit: `.logo-area img` maintains `width: 100%`, `height: 100%`, and `object-fit: contain` to preserve the aspect ratio safely.
+
+7. TITLE STYLES AND TYPOGRAPHY
+------------------------------------------------------------------------
+The site uses a standardized set of title classes to maintain visual consistency:
+
+A) Page Title with Green Rule (Título Principal de Página)
+   - Usage: Used at the very top of pages (e.g., "CONTACTO", "QUIÉNES SOMOS").
+   - Implementation: An `<h1>` with `className="page-title"` immediately followed by an `<hr>` with `className="green-rule"`.
+
+B) Green Section Box Title (Caja Verde de Sección)
+   - Usage: Used to break down content into main blocks (e.g., "HISTORIA", "PREGUNTAS FRECUENTES").
+   - Implementation: Any `<h2>` placed directly inside a `<section className="section-block">`. The CSS automatically applies a green border box, uppercase text, and padding. No specific class name is needed on the `<h2>` itself.
+
+C) Clean Subtitle (Subtítulo Limpio)
+   - Usage: Used for secondary headings within sections where a full box is too heavy (e.g., "Deje un mensaje:").
+   - Implementation: An `<h2>` with `className="form-subtitle"` (black text) or a custom clean subtitle class like `className="green-subtitle"` (green text, no box, no underline, matching the font size of the form subtitle).
 ========================================================================

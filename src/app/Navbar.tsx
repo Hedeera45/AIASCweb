@@ -7,18 +7,20 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/", label: "Inicio" },
+    { href: "/", label: "Novedades" },
     { href: "/publicaciones", label: "Publicaciones" },
     { 
       href: "/institucional", 
       label: "Institucional",
       dropdown: [
+        { href: "/institucional#preguntas-frecuentes", label: "Preguntas frecuentes" },
         { href: "/institucional#historia", label: "Historia" },
         { href: "/institucional#autoridades", label: "Autoridades" },
         { href: "/institucional#nuestra-mision", label: "Nuestra misión" },
-        { href: "/institucional#servicios", label: "Servicios" },
       ]
     },
+    { href: "/servicios", label: "Servicios" },
+    { href: "/asociate", label: "Asociate" },
     { href: "/contacto", label: "Contacto" },
   ];
 

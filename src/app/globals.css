@@ -78,13 +78,15 @@ a:hover {
 
 .logo-area picture {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-area img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -261,7 +263,7 @@ a:hover {
    PAGE CONTENT AREA
    ======================================== */
 .page-content {
-  padding: 36px 0 60px;
+  padding: 36px 0 0;
   /* Flush side alignment with logo boundaries */
 }
 
@@ -539,6 +541,24 @@ hr.green-rule {
   margin-bottom: 18px;
 }
 
+.green-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+  margin-bottom: 18px;
+}
+
+.green-subtitle-underlined {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+  margin-bottom: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 800px) {
   .contact-details-row {
     flex-direction: column;
@@ -632,7 +652,7 @@ hr.green-rule {
   .logo-area {
     grid-row: auto;
     grid-column: 1;
-    height: 90px;
+    height: auto;
     margin: 12px 0;
   }
 
@@ -674,10 +694,10 @@ hr.green-rule {
 
 
 /* ========================================
-   NAV 2+2 LAYOUT
-   Fires at viewport <= 950px CSS pixels.
+   NAV 3+3 LAYOUT
+   Fires at viewport <= 1250px CSS pixels.
    ======================================== */
-@media (max-width: 950px) {
+@media (max-width: 1250px) {
   .nav-links {
     flex-wrap: wrap;
     gap: 0;
@@ -689,14 +709,14 @@ hr.green-rule {
 
   .nav-links li,
   .nav-links li:nth-child(2),
-  .nav-links li:nth-child(4) {
+  .nav-links li:nth-child(5) {
     margin-left: 0;
     height: 44px;
     max-width: none;
   }
 
   .nav-links li {
-    flex: 0 0 50%;
+    flex: 0 0 33.333%;
   }
 
   .nav-links a {

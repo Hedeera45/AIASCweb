@@ -45,6 +45,13 @@ export default function RootLayout({
 
           {/* ---- PAGE CONTENT ---- */}
           <main className="page-content">{children}</main>
+
+          {/* ---- FOOTER ---- */}
+          <footer style={{ display: "flex", justifyContent: "flex-end", padding: "9px 30px 90px" }}>
+            <a href="https://www.ciacordoba.org.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="/logo-ciapc.png" alt="CIAPC Logo" style={{ height: "60px", width: "auto" }} />
+            </a>
+          </footer>
         </div>
       </body>
     </html>
