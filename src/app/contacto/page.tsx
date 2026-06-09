@@ -6,6 +6,7 @@ export default function ContactoPage() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [mapaCargado, setMapaCargado] = useState(false);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -51,11 +52,62 @@ export default function ContactoPage() {
         </div>
 
         {/* Integrated OpenStreetMap */}
-        <div className="map-container">
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-64.3540%2C-33.1330%2C-64.3440%2C-33.1250&amp;layer=mapnik&amp;marker=-33.12932%2C-64.34857"
-            title="Ubicación de la Asociación"
-          ></iframe>
+        <div className="map-container" style={{ position: "relative" }}>
+          {!mapaCargado ? (
+            <div 
+              style={{
+                width: "100%",
+                height: "350px",
+                border: "1px solid #ddd",
+                borderRadius: "4px",
+                position: "relative",
+                overflow: "hidden",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+              onClick={() => setMapaCargado(true)}
+            >
+              <img 
+                src="/mapa-placeholder.png" 
+                alt="Mapa de ubicación" 
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  filter: "blur(4px)",
+                  zIndex: 1
+                }}
+              />
+              <button
+                style={{
+                  position: "relative",
+                  zIndex: 2,
+                  padding: "12px 24px",
+                  background: "var(--color-header-bg)",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: "4px",
+                  fontFamily: "var(--font-main)",
+                  fontSize: "1.1rem",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  boxShadow: "0 4px 6px rgba(0,0,0,0.3)"
+                }}
+              >
+                Ver mapa
+              </button>
+            </div>
+          ) : (
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-64.352514%2C-33.134849%2C-64.342514%2C-33.126849&amp;layer=mapnik&amp;marker=-33.130849%2C-64.347514"
+              title="Ubicación de la Asociación"
+            ></iframe>
+          )}
         </div>
       </div>
 

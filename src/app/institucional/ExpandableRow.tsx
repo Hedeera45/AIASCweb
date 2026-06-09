@@ -51,7 +51,7 @@ export default function ExpandableRow({ title, children }: { title: string, chil
             padding: "12px 15px", 
             fontSize: "1rem", 
             lineHeight: 1.6,
-            background: "#fafafa",
+            background: "var(--color-white)",
             borderTop: "1px solid #ddd"
           }}>
             {children}

@@ -65,17 +65,23 @@ All styling rules are located at the end of the main stylesheet:
 Original stylesheet backed up to:
 [globals_backup_before_cramp_fix.css](file:///c:/Docs/Uni/Extra%20uni/aiasc_page/style%20ref/globals_backup_before_cramp_fix.css)
 
-5. RECENT UPDATE: ABANDONING CONTAINER QUERIES FOR NAVBAR
+5. RECENT UPDATE: VIEWPORT-BASED NAVBAR LAYOUT (6 BUTTONS)
 ------------------------------------------------------------------------
-The container query (@container) approach described in Section 3 failed during intermediate desktop zoom levels (133% - 150%). 
-Because the navbar is restricted to a grid column on desktop, its container width shrinks independently of the viewport width. This caused the layout rules to fight each other, resulting in a "jumping" navbar that wrapped prematurely.
+The container query (@container) approach described in Section 3 was abandoned because
+the navbar's container width shrank independently of the viewport, causing layout fights.
 
-Solution implemented:
-We removed the competing @container queries and narrow @media queries.
-The layout is now controlled by a single viewport-based breakpoint: @media (max-width: 950px).
-- Viewport > 950px: Single row layout (handles 100% - 133% zoom).
-- Viewport <= 950px: 3+2 wrapped layout (handles 150%+ zoom and mobile viewports).
-This completely eliminates the conflicting behaviors and provides a clean, predictable transition.
+Current button list (6 buttons):
+  "Novedades", "Publicaciones", "Institucional", "Servicios", "Asociate", "Contacto"
+
+The layout is now controlled by a single viewport-based breakpoint: @media (max-width: 1250px).
+- Viewport > 1250px: Single row layout, all 6 buttons in one line.
+- Viewport <= 1250px: 3+3 wrapped layout (flex: 0 0 33.333%), gap: 0.
+  Row 1: Novedades, Publicaciones, Institucional
+  Row 2: Servicios, Asociate, Contacto
+
+The 800px breakpoint separately controls the header grid (logo + cover stacking to single column).
+Both breakpoints coexist: at 800-1250px you get 3+3 nav with side-by-side header,
+below 800px you get 3+3 nav with stacked header.
 
 6. LOGO SCALING AND RESPONSIVE BEHAVIOR
 ------------------------------------------------------------------------
