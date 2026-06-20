@@ -17,9 +17,15 @@ export default function InstitucionalPage() {
         <ExpandableRow title="La asociación es lo mismo que el colegio?">
           text 2
         </ExpandableRow>
+        <ExpandableRow title="Qué beneficios tengo como asociado?">
+          text 2
+        </ExpandableRow>
       </section>
 
-
+      <section className="section-block" id="historia">
+        <h2>Historia</h2>
+        <div className="text-block">texto</div>
+      </section>
 
       <section className="section-block" id="autoridades">
         <h2>Autoridades</h2>
@@ -29,13 +35,7 @@ export default function InstitucionalPage() {
 
       <section className="section-block" id="nuestra-mision">
         <h2>Nuestra misión</h2>
-        <div className="text-block">
-          <ul style={{ paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "8px" }}>
-            <li>Fomentar el intercambio de experiencias entre agrónomos con o sin actividad</li>
-            <li>Servir como plataforma para la canalización de reclamos</li>
-            <li>O canalización de actividades en equipo</li>
-          </ul>
-        </div>
+        <div className="text-block">texto</div>
       </section>
     </>
   );

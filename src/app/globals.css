@@ -234,7 +234,7 @@ a:hover {
   position: absolute;
   background-color: var(--color-header-bg);
   min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
   top: 100%;
   left: 0;
@@ -566,6 +566,7 @@ hr.green-rule {
     gap: 24px;
     margin-top: 12px;
   }
+
   .contact-info {
     padding-left: 0;
     font-size: 1.2rem;
@@ -652,15 +653,16 @@ hr.green-rule {
   .logo-area {
     grid-row: auto;
     grid-column: 1;
-    height: auto;
+    height: 88px;
     margin: 12px 0;
+    padding: 10px 0;
   }
 
   .cover-area {
     grid-column: 1;
     grid-row: auto;
-    height: 100px;
-    padding: 0 12px;
+    height: 88px;
+    padding: 0;
   }
 
   .nav-spacer {
@@ -679,7 +681,7 @@ hr.green-rule {
   }
 
   .page-content {
-    padding: 24px 8px 40px;
+    padding: 24px 0 40px;
   }
 
   .pub-row td {
@@ -694,10 +696,15 @@ hr.green-rule {
 
 
 /* ========================================
-   NAV 3+3 LAYOUT
+   NAV 3+3 LAYOUT & MEDIUM VIEWPORT CONTAINER
    Fires at viewport <= 1250px CSS pixels.
    ======================================== */
 @media (max-width: 1250px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .nav-links {
     flex-wrap: wrap;
     gap: 0;
@@ -726,5 +733,32 @@ hr.green-rule {
 
   .nav-links .dropdown-content a {
     padding: 6px 12px;
+  }
+
+  .expandable-plus-btn {
+    left: -19px;
+  }
+}
+
+/* ========================================
+   EXPANDABLE ROW (PREGUNTAS FRECUENTES)
+   ======================================== */
+.expandable-plus-btn {
+  position: absolute;
+  left: -24px;
+  top: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  font-weight: bold;
+  padding: 0;
+  line-height: 1;
+}
+
+@media (max-width: 800px) {
+  .expandable-plus-btn {
+    left: -19px;
   }
 }

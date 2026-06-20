@@ -5,33 +5,35 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const isVieja = pathname.startsWith("/vieja");
+  const prefix = isVieja ? "/vieja" : "";
 
   const links = [
-    { href: "/", label: "Novedades" },
-    { href: "/publicaciones", label: "Publicaciones" },
+    { href: `${prefix}/`, label: "Novedades" },
+    { href: `${prefix}/publicaciones`, label: "Publicaciones" },
     { 
-      href: "/institucional", 
+      href: `${prefix}/institucional`, 
       label: "Institucional",
       dropdown: [
-        { href: "/institucional#preguntas-frecuentes", label: "Preguntas frecuentes" },
-        { href: "/institucional#historia", label: "Historia" },
-        { href: "/institucional#autoridades", label: "Autoridades" },
-        { href: "/institucional#nuestra-mision", label: "Nuestra misión" },
+        { href: `${prefix}/institucional#preguntas-frecuentes`, label: "Preguntas frecuentes" },
+        ...(isVieja ? [{ href: `${prefix}/institucional#historia`, label: "Historia" }] : []),
+        { href: `${prefix}/institucional#autoridades`, label: "Autoridades" },
+        { href: `${prefix}/institucional#nuestra-mision`, label: "Nuestra misión" },
       ]
     },
-    { href: "/servicios", label: "Servicios" },
-    { href: "/asociate", label: "Asociate" },
-    { href: "/contacto", label: "Contacto" },
+    { href: `${prefix}/servicios`, label: "Servicios" },
+    { href: `${prefix}/asociate`, label: "Asociate" },
+    { href: `${prefix}/contacto`, label: "Contacto" },
   ];
 
   return (
     <nav className="nav-bar">
       <ul className="nav-links">
         {links.map((link) => {
-          // Highlight "Inicio" exactly on "/", and others on their path or nested sub-paths (e.g. publication details)
-          const isActive = link.href === "/" 
-            ? pathname === "/" 
-            : pathname.startsWith(link.href);
+          const home = `${prefix}/`;
+          const isActive = link.href === home 
+            ? pathname === home || pathname === home.slice(0, -1)
+            : pathname.startsWith(link.href.split("#")[0]);
 
           return (
             <li key={link.href} className={link.dropdown ? "dropdown" : ""}>

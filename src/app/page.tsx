@@ -5,11 +5,9 @@ export default function HomePage() {
     <>
       {/* ---- NOVEDADES ---- */}
       <section className="section-block">
-        <h2>Novedades</h2>
+        <h2>No<Link href="/vieja" style={{ textDecoration: "none", color: "inherit" }}>v</Link>edades</h2>
         <hr className="green-rule" />
-        <div className="section-row">Novedad 1</div>
-        <div className="section-row">Novedad 2</div>
-        <div className="section-row">Novedad 3</div>
+
         <Link href="/novedades" className="section-more">
           más novedades...
         </Link>
@@ -19,15 +17,7 @@ export default function HomePage() {
       <section className="section-block">
         <h2>Próximos Eventos</h2>
         <hr className="green-rule" />
-        <div className="section-row">Evento 1</div>
-        <div className="section-row">Evento 2</div>
-        <div className="section-row">Evento 3</div>
 
-        {/* Cursos corrientes */}
-        <div className="subheader">Cursos corrientes</div>
-        <div className="section-row">Curso 1</div>
-        <div className="section-row">Curso 2</div>
-        <div className="section-row">Curso 3</div>
 
         <Link href="/eventos" className="section-more">
           más eventos...

@@ -8,8 +8,20 @@ export default function ExpandableRow({ title, children }: { title: string, chil
     <div style={{ position: "relative", marginBottom: "16px", marginLeft: 0, marginRight: 0 }}>
       {/* Plus/Minus Sign hanging in the left margin */}
       <button 
-        className="expandable-plus-btn"
         onClick={() => setIsOpen(!isOpen)}
+        style={{
+          position: "absolute",
+          left: "-24px",
+          top: "12px",
+          background: "none",
+          border: "none",
+          cursor: "pointer",
+          fontSize: "1.2rem",
+          color: "var(--color-text)",
+          fontWeight: "bold",
+          padding: 0,
+          lineHeight: 1,
+        }}
       >
         {isOpen ? "-" : "+"}
       </button>

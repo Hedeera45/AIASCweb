@@ -109,4 +109,8 @@ B) Green Section Box Title (Caja Verde de Sección)
 C) Clean Subtitle (Subtítulo Limpio)
    - Usage: Used for secondary headings within sections where a full box is too heavy (e.g., "Deje un mensaje:").
    - Implementation: An `<h2>` with `className="form-subtitle"` (black text) or a custom clean subtitle class like `className="green-subtitle"` (green text, no box, no underline, matching the font size of the form subtitle).
+
+D) Green Underlined Subtitle (Subtítulo Verde Subrayado)
+   - Usage: Used for separating content items inside a section block (e.g., in Servicios or Asociate).
+   - Implementation: An `<h3>` with `className="green-subtitle-underlined"`. It displays green text with a simple underline.
 ========================================================================
