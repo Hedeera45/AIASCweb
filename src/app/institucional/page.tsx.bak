@@ -43,12 +43,12 @@ export default function InstitucionalPage() {
       <section className="section-block" id="autoridades">
         <h2>Autoridades</h2>
         <div className="subheader">Comisión directiva 24 26</div>
-        <div className="text-block">
-          <strong style={{ color: "var(--color-dark-green)" }}>Presidente:</strong> Sandra MAZZONI<br />
-          <strong style={{ color: "var(--color-dark-green)" }}>Vice-Presidente:</strong> Federico POFFO<br />
-          <strong style={{ color: "var(--color-dark-green)" }}>Secretaria:</strong> Laura TAMIOZZO<br />
-          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 1°:</strong> Ivana QUADRELLI
-        </div>
+        <div className="text-block">texto</div>
+      </section>
+
+      <section className="section-block" id="nuestra-mision">
+        <h2>Nuestra misión</h2>
+        <div className="text-block">texto</div>
       </section>
     </>
   );

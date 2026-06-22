@@ -22,8 +22,7 @@ export default function AsociatePage() {
 
         <h3 className="green-subtitle-underlined">Cuota</h3>
         <div className="text-block">
-          Valor cuota 2026: $7.000 mensuales / $70.000 anual <br />
-          Estudiantes y recibidos hasta el primer año: Gratis
+          Valor cuota 2026: $7.000 mensuales / $70.000 anual
         </div>
       </section>
     </>
