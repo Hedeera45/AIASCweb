@@ -5,9 +5,10 @@ export default function HomePage() {
     <>
       {/* ---- NOVEDADES ---- */}
       <section className="section-block">
-        <h2>No<Link href="/alternativa" style={{ textDecoration: "none", color: "inherit" }}>v</Link>edades</h2>
+        <h2>No<Link href="/" style={{ textDecoration: "none", color: "inherit" }}>v</Link>edades</h2>
         <hr className="green-rule" />
-        <Link href="/novedades" className="section-more">
+
+        <Link href="/alternativa/novedades" className="section-more">
           más novedades...
         </Link>
       </section>
@@ -17,7 +18,8 @@ export default function HomePage() {
         <h2>Próximos Eventos</h2>
         <hr className="green-rule" />
 
-        <Link href="/eventos" className="section-more">
+
+        <Link href="/alternativa/eventos" className="section-more">
           más eventos...
         </Link>
       </section>

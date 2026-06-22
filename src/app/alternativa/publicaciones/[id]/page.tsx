@@ -54,7 +54,7 @@ export default async function PublicacionDetalle({
         <h1 className="page-title">Publicación no encontrada</h1>
         <hr className="green-rule" />
         <p>La publicación solicitada no existe.</p>
-        <Link href="/publicaciones" className="section-more">
+        <Link href="/alternativa/publicaciones" className="section-more">
           ← Volver a Publicaciones
         </Link>
       </>
@@ -72,7 +72,7 @@ export default async function PublicacionDetalle({
       <hr className="green-rule" />
       <p className="pub-detail-body">{pub.texto}</p>
 
-      <Link href="/publicaciones" className="section-more" style={{ marginTop: 32, display: "inline-block" }}>
+      <Link href="/alternativa/publicaciones" className="section-more" style={{ marginTop: 32, display: "inline-block" }}>
         ← Volver a Publicaciones
       </Link>
     </>

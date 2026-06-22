@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const isVieja = pathname.startsWith("/vieja");
-  const prefix = isVieja ? "/vieja" : "";
+  const isAlternativa = pathname.startsWith("/alternativa");
+  const prefix = isAlternativa ? "/alternativa" : "";
 
   const links = [
     { href: `${prefix}/`, label: "Novedades" },
@@ -16,7 +16,6 @@ export default function Navbar() {
       label: "Institucional",
       dropdown: [
         { href: `${prefix}/institucional#preguntas-frecuentes`, label: "Preguntas frecuentes" },
-        ...(isVieja ? [{ href: `${prefix}/institucional#historia`, label: "Historia" }] : []),
         { href: `${prefix}/institucional#autoridades`, label: "Autoridades" },
         { href: `${prefix}/institucional#nuestra-mision`, label: "Nuestra misión" },
       ]

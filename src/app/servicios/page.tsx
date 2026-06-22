@@ -23,7 +23,7 @@ export default function ServiciosPage() {
 
       <section className="section-block">
         <h2>Reuniones</h2>
-        <div className="text-block">- Todos los lunes, de 19.30 a 22, en Alberdi 1354</div>
+        <div className="text-block">Todos los lunes, de 19.30 a 22, en Alberdi 1354</div>
       </section>
     </>
   );

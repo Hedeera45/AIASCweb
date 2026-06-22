@@ -8,10 +8,10 @@ export default function SobrePage() {
 
       <ul className="sobre-links">
         <li>
-          <Link href="/sobre/estructura">Estructura organizativa</Link>
+          <Link href="/alternativa/sobre/estructura">Estructura organizativa</Link>
         </li>
         <li>
-          <Link href="/sobre/cobros">
+          <Link href="/alternativa/sobre/cobros">
             Cobros y servicios de la AIASC – Caja jubilatoria y otros sistemas
           </Link>
         </li>
