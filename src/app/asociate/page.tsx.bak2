@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Asociate - AIASC",
@@ -25,12 +24,6 @@ export default function AsociatePage() {
         <div className="text-block">
           Valor cuota 2026: $7.000 mensuales / $70.000 anual <br />
           Estudiantes y recibidos hasta el primer año: Gratis
-        </div>
-
-        <div style={{ marginTop: "24px" }}>
-          <Link href="/informacion-ciapc" className="green-subtitle-underlined" style={{ display: "inline-block" }}>
-            *Información del CIAPC*
-          </Link>
         </div>
       </section>
     </>
