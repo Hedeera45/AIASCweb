@@ -47,7 +47,19 @@ export default function InstitucionalPage() {
           <strong style={{ color: "var(--color-dark-green)" }}>Presidente:</strong> Sandra MAZZONI<br />
           <strong style={{ color: "var(--color-dark-green)" }}>Vice-Presidente:</strong> Federico POFFO<br />
           <strong style={{ color: "var(--color-dark-green)" }}>Secretaria:</strong> Laura TAMIOZZO<br />
-          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 1°:</strong> Ivana QUADRELLI
+	        <strong style={{ color: "var(--color-dark-green)" }}>Tesorero:</strong> Esteban FANTINO<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 1°:</strong> Ivana QUADRELLI<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 2°:</strong> Alejandra CANALE<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 3°:</strong> Sebastián MUÑOZ<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 4°:</strong> Francisco DEMARCHI<br />                   
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 1°:</strong> Fabricio BONESSI<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 2°:</strong> Fabian DEMASI<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 3°:</strong> Carlos CASAS<br />
+          <strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 4°:</strong> Cecilia MARQUEZ<br />                   
+          <strong style={{ color: "var(--color-dark-green)" }}>Revisor de cuentas:</strong> Eduardo ZACCHI<br />                   
+          <strong style={{ color: "var(--color-dark-green)" }}>Revisor de cuentas:</strong> Rogelio FANTINO<br />                   
+          <strong style={{ color: "var(--color-dark-green)" }}>Tribuno de ética profesional:</strong> Eduardo ASTORGA<br />                   
+          <strong style={{ color: "var(--color-dark-green)" }}>Tribuno de ética profesional:</strong> Walter GRUNIG<br />                   
         </div>
       </section>
     </>
