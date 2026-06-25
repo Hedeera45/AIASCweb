@@ -4,14 +4,14 @@ import ExpandableRow from "./ExpandableRow";
 import MiniTimeline from "./MiniTimeline";
 
 export const metadata: Metadata = {
-  title: "Información del colegio - AIASC",
+  title: "Información de la asociación - AIASC",
   description: "Conozca sobre quiénes somos, nuestras autoridades, preguntas frecuentes y galería.",
 };
 
 export default function InstitucionalPage() {
   return (
     <>
-      <h1 className="page-title">Información del colegio</h1>
+      <h1 className="page-title">Información de la asociación</h1>
       <hr className="green-rule" />
 
       <section className="section-block" id="quienes-somos">
