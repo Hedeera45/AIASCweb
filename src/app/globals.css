@@ -233,7 +233,8 @@ a:hover {
   display: none;
   position: absolute;
   background-color: var(--color-header-bg);
-  min-width: 180px;
+  width: 100%;
+  min-width: 176px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
   top: 100%;
@@ -257,6 +258,27 @@ a:hover {
 
 .nav-links .dropdown-content a:hover {
   background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dropdown-group+.dropdown-group {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-links .dropdown-content a.dropdown-group-title {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: none;
+  padding: 12px 16px 9px;
+}
+
+.nav-links .dropdown-content a.dropdown-sub-item {
+  padding: 8px 16px 8px 28px;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.dropdown-group:last-child {
+  padding-bottom: 1px;
 }
 
 /* ========================================
@@ -642,6 +664,10 @@ hr.green-rule {
    RESPONSIVE
    ======================================== */
 @media (max-width: 800px) {
+  .dropdown-content {
+    min-width: 132px;
+  }
+
   .container {
     padding: 10px 15px;
   }
@@ -735,14 +761,16 @@ hr.green-rule {
     padding: 6px 12px;
   }
 
-  .expandable-plus-btn {
+  /* .expandable-plus-btn {
     left: -19px;
-  }
+  } */
 }
 
 /* ========================================
    EXPANDABLE ROW (PREGUNTAS FRECUENTES)
-   ======================================== */
+   Currently unused — ExpandableRow.tsx uses inline styles.
+   Kept commented out for future reference.
+   ========================================
 .expandable-plus-btn {
   position: absolute;
   left: -24px;
@@ -761,4 +789,484 @@ hr.green-rule {
   .expandable-plus-btn {
     left: -19px;
   }
+}
+*/
+
+/* ========================================
+   AUTHORITIES GRID
+   ======================================== */
+.authorities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.authorities-column h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-teal);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.authorities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.authorities-list strong {
+  color: var(--color-dark-green);
+}
+
+@media (max-width: 900px) {
+  .authorities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorities-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ========================================
+   TIMELINE LAYOUT & ANIMATIONS
+   ======================================== */
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 56px;
+  /* Spacing between rows */
+  margin: 54px 0 36px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline-node {
+  position: relative;
+  flex: 0 0 33.333%;
+  /* 3 dots per row */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+}
+
+/* The continuous connector line */
+.timeline-node::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-color: var(--color-dark-green);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* The Year labels above the dots */
+.timeline-years {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-dark-green);
+  white-space: nowrap;
+  transition: transform 0.2s ease, color 0.2s;
+}
+
+/* The interactive dot */
+.timeline-dot {
+  position: relative;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 5px solid var(--color-dark-green);
+  cursor: pointer;
+  padding: 0;
+  margin-top: 9px;
+  /* Centering dot vertically on the line */
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+/* Hover and Active styles */
+.timeline-node:hover .timeline-dot {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 6px rgba(26, 77, 58, 0.15);
+}
+
+.timeline-node:hover .timeline-years {
+  color: var(--color-teal);
+  transform: translateY(-2px);
+}
+
+.timeline-node.active .timeline-dot {
+  transform: scale(1.3);
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 8px rgba(64, 160, 144, 0.2);
+}
+
+.timeline-node.active .timeline-years {
+  color: var(--color-teal);
+}
+
+/* Responsive columns: 2 per row on tablets, 1 per row on mobile */
+@media (max-width: 768px) {
+  .timeline-node {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-node {
+    flex: 0 0 100%;
+  }
+}
+
+/* Clean Detail Section (No Box/Card Background) */
+.timeline-detail-clean {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+
+/* Horizontal Authorities Row */
+.timeline-authorities-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+  margin-top: 16px;
+}
+
+.timeline-authority-col {
+  flex: 0 1 auto;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline-authority-role {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-dark-green);
+  letter-spacing: 0.5px;
+}
+
+.timeline-authority-name {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.timeline-period-subtitle {
+  font-family: var(--font-heading);
+  color: var(--color-dark-green);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Details Grid for full Historia page */
+.timeline-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.timeline-detail-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-detail-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-photo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.timeline-photo {
+  width: 75%;
+  max-width: 335px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: -88px;
+  margin-left: 15%;
+}
+
+.timeline-photo-caption {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #777;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .timeline-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .timeline-photo {
+    height: 160px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   MINI TIMELINE STYLING (Institutional Page)
+   ======================================== */
+.mini-timeline-wrapper {
+  margin: 28px 0;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.mini-timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Single-row continuous connector line - shortened to 82% to stop before ellipsis */
+.mini-timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 53%;
+  left: 0;
+  right: 15%;
+  height: 6px;
+  background-color: var(--color-dark-green);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.mini-timeline-node {
+  position: relative;
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.mini-timeline-years {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-dark-green);
+  white-space: nowrap;
+  transition: transform 0s ease, color 0.2s;
+}
+
+.mini-timeline-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 5px solid var(--color-dark-green);
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+}
+
+/* Three dots ellipsis button */
+.mini-timeline-ellipsis {
+  flex: 0 0 15%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  cursor: pointer;
+  z-index: 2;
+  height: 40px;
+  position: relative;
+  margin-top: 6px;
+}
+
+/* The hover underline effect like a link */
+.mini-timeline-ellipsis::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-dark-green);
+  opacity: 0;
+  transition: opacity 0.2s ease, background-color 0.2s;
+}
+
+.mini-timeline-ellipsis:hover::after {
+  opacity: 1;
+  background-color: var(--color-teal);
+}
+
+.ellipsis-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-dark-green);
+}
+
+.mini-timeline-ellipsis:hover .ellipsis-dot {
+  background-color: var(--color-teal);
+  transform: scale(1.15);
+}
+
+/* Hover and Active styles */
+.mini-timeline-node:hover .mini-timeline-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 6px rgba(26, 77, 58, 0.15);
+}
+
+.mini-timeline-node:hover .mini-timeline-years {
+  color: var(--color-teal);
+  transform: translateY(-2px);
+}
+
+.mini-timeline-node.active .mini-timeline-dot {
+  transform: scale(1.25);
+  border-color: var(--color-teal);
+}
+
+.mini-timeline-node.active .mini-timeline-years {
+  color: var(--color-teal);
+}
+
+/* Dynamic drawer slide down */
+.mini-timeline-detail-drawer {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.mini-timeline-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.mini-authorities-list {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.mini-authorities-list li {
+  font-size: 1.02rem;
+  color: #333;
+}
+
+/* Larger font for Historia (full) page authorities */
+.timeline-detail-left .mini-authorities-list li {
+  font-size: 1.15rem;
+}
+
+/* Photo container */
+.mini-photo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: -65px;
+}
+
+.mini-timeline-photo {
+  width: 75%;
+  max-width: 335px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-left: 15%;
+  margin-bottom: 0%;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -25px
+}
+
+.mini-photo-caption {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #777;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .mini-timeline-detail-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Hover effect for the Historia page link */
+#historia a {
+  display: block;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#historia a:hover h2 {
+  color: var(--color-teal);
 }
