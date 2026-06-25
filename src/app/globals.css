@@ -1017,13 +1017,13 @@ hr.green-rule {
 
 .timeline-photo {
   width: 75%;
-  max-width: 335px;
+  max-width: 355px;
   height: auto;
   object-fit: contain;
   border-radius: 6px;
   border: 1px solid #eaeaea;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin-top: -22;
+  margin-top: -22px;
   margin-left: 15%;
 }
 
