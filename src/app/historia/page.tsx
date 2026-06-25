@@ -149,14 +149,13 @@ export default function HistoriaPage() {
       {/* Clean Detail Content (no boxed card) */}
       {selectedPeriod && (
         <div className="timeline-detail-clean">
-          <h3 className="green-subtitle-underlined" style={{ fontSize: "1.8rem" }}>
-            {selectedPeriod.years}
-          </h3>
-          
           <div className="timeline-detail-grid">
             {/* Left section: Authorities */}
             <div className="timeline-detail-left">
-              <h4 className="timeline-period-subtitle">Autoridades</h4>
+              <h3 className="green-subtitle-underlined" style={{ fontSize: "1.8rem", marginTop: 0 }}>
+                {selectedPeriod.years}
+              </h3>
+              <h4 className="timeline-period-subtitle" style={{ marginTop: "16px" }}>Autoridades</h4>
               <ul className="mini-authorities-list">
                 {selectedPeriod.authorities.map((auth, idx) => (
                   <li key={idx}>
