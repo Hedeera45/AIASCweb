@@ -28,7 +28,7 @@ export default function Navbar() {
       label: "Institucional",
       dropdown: [
         {
-          groupLabel: "Colegio",
+          groupLabel: "Asociación",
           groupHref: `${prefix}/institucional`,
           items: [
             { href: `${prefix}/institucional#quienes-somos`, label: "Quiénes somos" },
