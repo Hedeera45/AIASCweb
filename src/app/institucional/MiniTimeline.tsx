@@ -11,31 +11,71 @@ interface MiniPeriod {
 
 const miniPeriodsData: MiniPeriod[] = [
   {
-    id: "12",
-    years: "2024-2026",
+    id: "7",
+    years: "2020-2026",
     authorities: [
       "Presidente: Sandra MAZZONI",
       "Vice-Presidente: Federico POFFO",
       "Secretaria: Laura TAMIOZZO",
-      "Tesorero: Esteban FANTINO"
+      "Tesorero: Esteban FANTINO",
+      "Vocal Titular 1°: Ivana QUADRELLI",
+      "Vocal Titular 2°: Alejandra CANALE",
+      "Vocal Titular 3°: Sebastián MUÑOZ",
+      "Vocal Titular 4°: Francisco DEMARCHI",
+      "Vocal Suplente 1°: Fabricio BONESSI",
+      "Vocal Suplente 2°: Fabian DEMASI",
+      "Vocal Suplente 3°: Carlos CASAS",
+      "Vocal Suplente 4°: Cecilia MARQUEZ",
+      "Revisor de cuentas: Eduardo ZACCHI",
+      "Revisor de cuentas: Rogelio FANTINO",
+      "Tribuno de ética profesional: Eduardo ASTORGA",
+      "Tribuno de ética profesional: Walter GRUNIG",
     ]
   },
   {
-    id: "11",
-    years: "2022-2024",
+    id: "6",
+    years: "2017-2020",
     authorities: [
-      "Presidente: Sandra MAZZONI",
-      "Vice-Presidente: Federico POFFO",
-      "Secretaria: Laura TAMIOZZO"
+      "Presidente: Ulla Daniel",
+      "Vice-Presidente: Demarchi Francisco",
+      "Secretario: Primo Carla",
+      "Tesorero: Fantino Esteban",
+      "Vocal titular 1°: Grunig Walter",
+      "Vocal titular 2°: Barbora Marcos",
+      "Vocal titular 3°: Zacchi Eduardo",
+      "Vocal titular 4°: Engel Heber",
+      "Vocal suplente 1°: Mazzoni Sandra",
+      "Vocal suplente 2°: Sobre Casas Carlos",
+      "Vocal suplente 3°: Martinez Jose",
+      "Vocal suplente 4°: Velazquez Joaquin",
+      "Revisor de cuentas: Quadrelli Ivana",
+      "Revisor de cuentas: Rudi Aldo",
+      "Tribuno de ética: Fantino Rogelio",
+      "Tribuno de ética: Astorga Eduardo",
+      "Tribuno de ética°: Demassi Fabian"
     ]
   },
   {
-    id: "10",
-    years: "2020-2022",
+    id: "5",
+    years: "2012-2017",
     authorities: [
-      "Presidente: Sandra MAZZONI",
-      "Vice-Presidente: Federico POFFO",
-      "Tesorero: Esteban FANTINO"
+      "Presidente: Fantino Esteban",
+      "Vice-Presidente: Demarchi Francisco",
+      "Secretario: Croatto Dario",
+      "Tesorero: Demassi Fabian",
+      "Vocal titular 1°: Magallanes Torres Sandra",
+      "Vocal titular 2°: Poffo Federico",
+      "Vocal titular 3°: Bertorello Julian",
+      "Vocal titular 4°: Sobre Casas Carlos",
+      "Vocal suplente 1°: Sanches Sergio ",
+      "Vocal suplente 2°: Quadrelli Ivana",
+      "Vocal suplente 3°: Mazzoni Sandra",
+      "Vocal suplente 4°: Garcia L",
+      "Revisor de cuentas: Zacchi Eduardo",
+      "Revisor de cuentas: Marcellino Jose",
+      "Tribuno de ética: Fantino Jose",
+      "Tribuno de ética: Grunig Walter",
+      "Tribuno de ética°: Astorga Eduardo"
     ]
   }
 ];
@@ -51,8 +91,8 @@ export default function MiniTimeline() {
         {miniPeriodsData.map((period) => {
           const isActive = selectedPeriod?.id === period.id;
           return (
-            <div 
-              key={period.id} 
+            <div
+              key={period.id}
               className={`mini-timeline-node ${isActive ? "active" : ""}`}
               onClick={() => setSelectedPeriod(isActive ? null : period)}
             >
@@ -61,9 +101,9 @@ export default function MiniTimeline() {
             </div>
           );
         })}
-        
+
         {/* Three separate dots trailing off, leading to the full Historia page on click */}
-        <div 
+        <div
           className="mini-timeline-ellipsis"
           onClick={() => router.push("/historia")}
           aria-label="Ver más historia"
@@ -80,7 +120,7 @@ export default function MiniTimeline() {
           <h3 className="green-subtitle-underlined" style={{ fontSize: "1.6rem", margin: "20px 0 12px 0" }}>
             Comisión {selectedPeriod.years}
           </h3>
-          
+
           <div className="mini-timeline-detail-content">
             {/* Left Column: Authorities */}
             <div className="mini-timeline-left">
@@ -102,9 +142,9 @@ export default function MiniTimeline() {
             {/* Right Column: Actual Photo of the Commission */}
             <div className="mini-timeline-right">
               <div className="mini-photo-container">
-                <img 
-                  src="/perro_simpsons.jpg" 
-                  alt={`Foto Comisión ${selectedPeriod.years}`} 
+                <img
+                  src="/perro_simpsons.png"
+                  alt={`Foto Comisión ${selectedPeriod.years}`}
                   className="mini-timeline-photo"
                 />
               </div>
