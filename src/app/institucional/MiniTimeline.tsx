@@ -12,7 +12,7 @@ interface MiniPeriod {
 const miniPeriodsData: MiniPeriod[] = [
   {
     id: "7",
-    years: "2020-2026",
+    years: "2026-2020",
     authorities: [
       "Presidente: Sandra MAZZONI",
       "Vice-Presidente: Federico POFFO",
@@ -34,7 +34,7 @@ const miniPeriodsData: MiniPeriod[] = [
   },
   {
     id: "6",
-    years: "2017-2020",
+    years: "2020-2017",
     authorities: [
       "Presidente: Ulla Daniel",
       "Vice-Presidente: Demarchi Francisco",
@@ -52,12 +52,12 @@ const miniPeriodsData: MiniPeriod[] = [
       "Revisor de cuentas: Rudi Aldo",
       "Tribuno de ética: Fantino Rogelio",
       "Tribuno de ética: Astorga Eduardo",
-      "Tribuno de ética°: Demassi Fabian"
+      "Tribuno de ética: Demassi Fabian"
     ]
   },
   {
     id: "5",
-    years: "2012-2017",
+    years: "2017-2012",
     authorities: [
       "Presidente: Fantino Esteban",
       "Vice-Presidente: Demarchi Francisco",
@@ -75,7 +75,7 @@ const miniPeriodsData: MiniPeriod[] = [
       "Revisor de cuentas: Marcellino Jose",
       "Tribuno de ética: Fantino Jose",
       "Tribuno de ética: Grunig Walter",
-      "Tribuno de ética°: Astorga Eduardo"
+      "Tribuno de ética: Astorga Eduardo"
     ]
   }
 ];

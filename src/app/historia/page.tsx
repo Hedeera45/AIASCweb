@@ -12,7 +12,7 @@ interface TimelinePeriod {
 const periodsData: TimelinePeriod[] = [
   { 
     id: "7", 
-    years: "2020-2026", 
+    years: "2026-2020", 
     authorities: [ 
       "Presidente: Sandra MAZZONI",
       "Vice-Presidente: Federico POFFO",
@@ -34,7 +34,7 @@ const periodsData: TimelinePeriod[] = [
   }, 
   { 
     id: "6", 
-    years: "2017-2020", 
+    years: "2020-2017", 
     authorities: [ 
       "Presidente: Ulla Daniel", 
       "Vice-Presidente: Demarchi Francisco", 
@@ -52,12 +52,12 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Rudi Aldo", 
       "Tribuno de ética: Fantino Rogelio", 
       "Tribuno de ética: Astorga Eduardo", 
-      "Tribuno de ética°: Demassi Fabian" 
+      "Tribuno de ética: Demassi Fabian" 
     ] 
   }, 
   { 
     id: "5", 
-    years: "2012-2017", 
+    years: "2017-2012", 
     authorities: [ 
       "Presidente: Fantino Esteban", 
       "Vice-Presidente: Demarchi Francisco", 
@@ -67,7 +67,7 @@ const periodsData: TimelinePeriod[] = [
       "Vocal titular 2°: Poffo Federico", 
       "Vocal titular 3°: Bertorello Julian", 
       "Vocal titular 4°: Sobre Casas Carlos", 
-      "Vocal suplente 1°: Sanches Sergio ", 
+      "Vocal suplente 1°: Sanchez Sergio ", 
       "Vocal suplente 2°: Quadrelli Ivana", 
       "Vocal suplente 3°: Mazzoni Sandra", 
       "Vocal suplente 4°: Garcia L", 
@@ -75,12 +75,12 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Marcellino Jose", 
       "Tribuno de ética: Fantino Jose", 
       "Tribuno de ética: Grunig Walter", 
-      "Tribuno de ética°: Astorga Eduardo" 
+      "Tribuno de ética: Astorga Eduardo" 
     ] 
   }, 
   { 
     id: "4", 
-    years: "2009-2012", 
+    years: "2012-2009", 
     authorities: [ 
       "Presidente: Demarchi Francisco", 
       "Vice-Presidente: Demasi Fabian", 
@@ -98,13 +98,13 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Marcellino Jose", 
       "Tribuno de ética: Fantino Rogelio", 
       "Tribuno de ética: Grunig Walter", 
-      "Tribuno de ética°: Astorga Eduardo" 
+      "Tribuno de ética: Astorga Eduardo" 
     ] 
   }, 
 
   { 
     id: "3", 
-    years: "2007", 
+    years: "2009-2007", 
     authorities: [ 
       "Presidente: Demarchi Francisco", 
       "Vice-Presidente: Taborda Osvaldo", 
@@ -122,12 +122,12 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Ochoa Claudio", 
       "Tribuno de ética: Fantino Rogelio", 
       "Tribuno de ética: Grunig Walter", 
-      "Tribuno de ética°: Astorga Eduardo" 
+      "Tribuno de ética: Astorga Eduardo" 
     ] 
   }, 
   { 
     id: "2", 
-    years: "2005-2007", 
+    years: "2007-2005", 
     authorities: [ 
       "Presidente: Agote Luis Guillermo", 
       "Vice-Presidente: Demasi Fabian", 
@@ -145,13 +145,13 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Robledo Luciana", 
       "Tribuno de ética: Ochoa Claudio", 
       "Tribuno de ética: Montesano Alberto", 
-      "Tribuno de ética°: Fantino Rogelio" 
+      "Tribuno de ética: Fantino Rogelio" 
     ] 
   },
 
   { 
     id: "1", 
-    years: "2002-2005", 
+    years: "2005-2002", 
     authorities: [ 
       "Presidente: Grunig Walter", 
       "Vice-Presidente: Mazzoni Sandra", 
@@ -169,7 +169,7 @@ const periodsData: TimelinePeriod[] = [
       "Revisor de cuentas: Rosa Maria Jose", 
       "Tribuno de ética: Marcellino Jose", 
       "Tribuno de ética: Astorga Eduardo", 
-      "Tribuno de ética°: Fantino Rogelio" 
+      "Tribuno de ética: Fantino Rogelio" 
     ] 
   } 
 ];
