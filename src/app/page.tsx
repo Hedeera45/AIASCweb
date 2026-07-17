@@ -6,10 +6,12 @@ export default function HomePage() {
       <p style={{
         color: 'var(--color-green)',
         fontStyle: 'italic',
-        fontWeight: 500,
+        fontWeight: 650,
         textAlign: 'left',
-        marginBottom: '0.7rem',
-        marginTop: '-1.1rem'
+        marginBottom: '0.9rem',
+        marginTop: '-1.1rem',
+        marginLeft: '1.7rem',
+        fontSize: '1.7rem'
       }}>
         ~ Esta página está en construcción ~
       </p>
