@@ -289,6 +289,11 @@ a:hover {
   /* Flush side alignment with logo boundaries */
 }
 
+.page-content a {
+  text-decoration: underline dashed;
+  text-underline-offset: 3px;
+}
+
 /* ========================================
    GREEN HR RULER
    ======================================== */

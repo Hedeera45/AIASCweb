@@ -38,13 +38,9 @@ export default function Navbar() {
             { href: `${prefix}/institucional#galeria`, label: "Galería" },
           ],
         },
-        {
-          groupLabel: "Mesa BPA",
-          groupHref: `${prefix}/mesa-bpa`,
-        },
       ]
     },
-    { href: `${prefix}/servicios`, label: "Servicios" },
+    { href: `${prefix}/actividades`, label: "Actividades" },
     { href: `${prefix}/asociate`, label: "Asociate" },
     { href: `${prefix}/contacto`, label: "Contacto" },
   ];

@@ -27,11 +27,6 @@ export default function AsociatePage() {
           Estudiantes y recibidos hasta el primer año: Gratis
         </div>
 
-        <div style={{ marginTop: "24px" }}>
-          <Link href="/informacion-ciapc" className="green-subtitle-underlined" style={{ display: "inline-block" }}>
-            *Información del CIAPC*
-          </Link>
-        </div>
       </section>
     </>
   );

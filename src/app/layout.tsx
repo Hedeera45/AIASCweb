@@ -47,13 +47,18 @@ export default function RootLayout({
           <main className="page-content">{children}</main>
 
           {/* ---- FOOTER ---- */}
-          <footer style={{ display: "flex", justifyContent: "flex-end", padding: "9px 30px 90px" }}>
-            <a href="https://www.ciacordoba.org.ar/" target="_blank" rel="noopener noreferrer">
-              <img src="/logo-ciapc.png" alt="CIAPC Logo" style={{ height: "60px", width: "auto" }} />
-            </a>
+          <footer style={{ display: "flex", flexDirection: "column", gap: "15px", padding: "9px 30px 90px 16px" }}>
+            <p style={{ margin: 0, fontWeight: 300, alignSelf: "flex-start" }}>
+              Empresas que acompañan:
+            </p>
+            <div style={{ display: "flex", gap: "15px", alignSelf: "flex-end" }}>
+              <a href="https://www.ciacordoba.org.ar/" target="_blank" rel="noopener noreferrer">
+                <img src="/logo-ciapc.png" alt="CIAPC Logo" style={{ height: "60px", width: "auto" }} />
+              </a>
+            </div>
           </footer>
-        </div>
-      </body>
-    </html>
+    </div>
+      </body >
+    </html >
   );
 }

@@ -66,7 +66,7 @@ export default function InstitucionalPage() {
               <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 3°:</strong> Sebastián MUÑOZ</div>
               <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Titular 4°:</strong> Francisco DEMARCHI</div>
               <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 1°:</strong> Fabricio BONESSI</div>
-              <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 2°:</strong> Fabian DEMASI</div>
+              <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 2°:</strong> Fabian DEMASSI</div>
               <div><strong style={{ color: "var(--color-dark-green)" }}>Vocal Suplente 3°:</strong> Carlos CASAS</div>
             </div>
           </div>
