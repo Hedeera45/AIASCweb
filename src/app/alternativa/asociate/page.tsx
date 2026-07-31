@@ -48,7 +48,7 @@ export default function AsociatePage() {
 
         <div style={{ marginTop: "24px" }}>
           <Link href="/alternativa/informacion-ciapc" className="green-subtitle-underlined" style={{ display: "inline-block" }}>
-            *Información del CIAPC*
+            *Información del CIAPC* - backup
           </Link>
         </div>
       </section>
