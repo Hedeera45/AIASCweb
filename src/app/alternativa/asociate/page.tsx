@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Asociate - AIASC",
@@ -43,6 +44,12 @@ export default function AsociatePage() {
           <div><table style={{ width: "100%" }}><tbody><tr><td><strong>Edades</strong></td><td style={{ textAlign: "center" }}><strong>%</strong></td><td><strong>Cuota anual</strong></td><td><strong>Cuota mensual</strong></td></tr><tr><td>Hasta 30 años (inclusive)</td><td>50</td><td>$420.699,00.-</td><td>$35.058,25.-</td></tr><tr><td>De 31 a 40 años (inclusive)</td><td>100</td><td>$841.397,76.-</td><td>$70.116,48.-</td></tr><tr><td>De 41 a 55 años (inclusive)</td><td>120</td><td>$1.009.677,36.-</td><td>$84.139,78.-</td></tr><tr><td>De 56 o más años</td><td>140</td><td>$1.177.956,84.-</td><td>$98.163,07.-</td></tr></tbody></table></div>
           <br />
           - El monto por contrato es del 18%, 9% lo paga el trabajador y 9% el contratador&nbsp;&nbsp;<a href="https://www.caja8470.com.ar/institucional-la-caja/" target="_blank" rel="noopener noreferrer">&gt;</a>&nbsp;&nbsp;
+        </div>
+
+        <div style={{ marginTop: "24px" }}>
+          <Link href="/alternativa/informacion-ciapc" className="green-subtitle-underlined" style={{ display: "inline-block" }}>
+            *Información del CIAPC*
+          </Link>
         </div>
       </section>
     </>

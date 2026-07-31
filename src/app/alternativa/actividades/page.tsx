@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Servicios - AIASC",
-  description: "Servicios ofrecidos por la Asociación de Ingenieros Agrónomos del Sur de Córdoba.",
+  title: "Actividades - AIASC",
+  description: "Actividades ofrecidas por la Asociación de Ingenieros Agrónomos del Sur de Córdoba.",
 };
 
-export default function ServiciosPage() {
+export default function ActividadesPage() {
   return (
     <>
 
